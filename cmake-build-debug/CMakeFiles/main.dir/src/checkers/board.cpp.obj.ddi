@@ -1,0 +1,20 @@
+{
+  "revision": 0,
+  "rules": [
+    {
+      "primary-output": "CMakeFiles\\main.dir\\src\\checkers\\board.cpp.obj",
+      "requires": [
+        {
+          "logical-name": "piece"
+        },
+        {
+          "logical-name": "position"
+        },
+        {
+          "logical-name": "board"
+        }
+      ]
+    }
+  ],
+  "version": 1
+}

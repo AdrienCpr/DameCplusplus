@@ -1,0 +1,46 @@
+{
+	"modules" : 
+	{
+		"board" : 
+		{
+			"bmi" : "C:/C++/TP/Project/DameCplusplus/cmake-build-debug/CMakeFiles/main.dir/board.pcm",
+			"is-private" : false
+		},
+		"piece" : 
+		{
+			"bmi" : "C:/C++/TP/Project/DameCplusplus/cmake-build-debug/CMakeFiles/main.dir/piece.pcm",
+			"is-private" : false
+		},
+		"position" : 
+		{
+			"bmi" : "C:/C++/TP/Project/DameCplusplus/cmake-build-debug/CMakeFiles/main.dir/position.pcm",
+			"is-private" : false
+		}
+	},
+	"references" : 
+	{
+		"board" : 
+		{
+			"lookup-method" : "by-name",
+			"path" : "CMakeFiles/main.dir/board.pcm"
+		},
+		"piece" : 
+		{
+			"lookup-method" : "by-name",
+			"path" : "CMakeFiles/main.dir/piece.pcm"
+		},
+		"position" : 
+		{
+			"lookup-method" : "by-name",
+			"path" : "CMakeFiles/main.dir/position.pcm"
+		}
+	},
+	"usages" : 
+	{
+		"board" : 
+		[
+			"piece",
+			"position"
+		]
+	}
+}

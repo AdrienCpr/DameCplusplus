@@ -1,0 +1,53 @@
+{
+	"bmi-installation" : null,
+	"compiler-frontend-variant" : "GNU",
+	"compiler-id" : "Clang",
+	"compiler-simulate-id" : "",
+	"config" : "Debug",
+	"cxx-modules" : 
+	{
+		"CMakeFiles/main.dir/src/checkers/modules/board.cppm.obj" : 
+		{
+			"bmi-only" : false,
+			"destination" : null,
+			"name" : "CXX_MODULES",
+			"relative-directory" : "src/checkers/modules",
+			"source" : "C:/C++/TP/Project/DameCplusplus/src/checkers/modules/board.cppm",
+			"type" : "CXX_MODULES",
+			"visibility" : "PUBLIC"
+		},
+		"CMakeFiles/main.dir/src/checkers/modules/piece.cppm.obj" : 
+		{
+			"bmi-only" : false,
+			"destination" : null,
+			"name" : "CXX_MODULES",
+			"relative-directory" : "src/checkers/modules",
+			"source" : "C:/C++/TP/Project/DameCplusplus/src/checkers/modules/piece.cppm",
+			"type" : "CXX_MODULES",
+			"visibility" : "PUBLIC"
+		},
+		"CMakeFiles/main.dir/src/checkers/modules/position.cppm.obj" : 
+		{
+			"bmi-only" : false,
+			"destination" : null,
+			"name" : "CXX_MODULES",
+			"relative-directory" : "src/checkers/modules",
+			"source" : "C:/C++/TP/Project/DameCplusplus/src/checkers/modules/position.cppm",
+			"type" : "CXX_MODULES",
+			"visibility" : "PUBLIC"
+		}
+	},
+	"dir-cur-bld" : "C:/C++/TP/Project/DameCplusplus/cmake-build-debug",
+	"dir-cur-src" : "C:/C++/TP/Project/DameCplusplus",
+	"dir-top-bld" : "C:/C++/TP/Project/DameCplusplus/cmake-build-debug",
+	"dir-top-src" : "C:/C++/TP/Project/DameCplusplus",
+	"exports" : [],
+	"forward-modules-from-target-dirs" : [],
+	"include-dirs" : 
+	[
+		"_deps\\sfml-src\\include"
+	],
+	"language" : "CXX",
+	"linked-target-dirs" : [],
+	"module-dir" : "C:/C++/TP/Project/DameCplusplus/cmake-build-debug/CMakeFiles/main.dir"
+}

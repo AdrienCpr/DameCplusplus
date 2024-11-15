@@ -1,0 +1,3 @@
+-fmodule-file=piece=CMakeFiles/main.dir/piece.pcm
+-fmodule-file=position=CMakeFiles/main.dir/position.pcm
+-fmodule-file=board=CMakeFiles/main.dir/board.pcm

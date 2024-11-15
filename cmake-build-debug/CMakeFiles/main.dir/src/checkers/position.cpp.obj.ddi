@@ -1,0 +1,14 @@
+{
+  "revision": 0,
+  "rules": [
+    {
+      "primary-output": "CMakeFiles\\main.dir\\src\\checkers\\position.cpp.obj",
+      "requires": [
+        {
+          "logical-name": "position"
+        }
+      ]
+    }
+  ],
+  "version": 1
+}

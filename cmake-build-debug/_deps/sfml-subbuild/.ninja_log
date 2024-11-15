@@ -1,0 +1,21 @@
+# ninja log v6
+3	86	7533612802969061	sfml-populate-prefix/src/sfml-populate-stamp/sfml-populate-mkdir	2111bfd24f96e99e
+3	86	7533612802969061	C:/C++/TP/Project/DameCplusplus/cmake-build-debug/_deps/sfml-subbuild/sfml-populate-prefix/src/sfml-populate-stamp/sfml-populate-mkdir	2111bfd24f96e99e
+87	24655	7533613048663884	sfml-populate-prefix/src/sfml-populate-stamp/sfml-populate-download	3e24d13885c5dd9a
+87	24655	7533613048663884	C:/C++/TP/Project/DameCplusplus/cmake-build-debug/_deps/sfml-subbuild/sfml-populate-prefix/src/sfml-populate-stamp/sfml-populate-download	3e24d13885c5dd9a
+24656	26666	7533613048730303	sfml-populate-prefix/src/sfml-populate-stamp/sfml-populate-update	df446c7118aa0990
+24656	26666	7533613048730303	C:/C++/TP/Project/DameCplusplus/cmake-build-debug/_deps/sfml-subbuild/sfml-populate-prefix/src/sfml-populate-stamp/sfml-populate-update	df446c7118aa0990
+26667	26738	7533613069481251	sfml-populate-prefix/src/sfml-populate-stamp/sfml-populate-patch	715bedff2387fe7f
+26667	26738	7533613069481251	C:/C++/TP/Project/DameCplusplus/cmake-build-debug/_deps/sfml-subbuild/sfml-populate-prefix/src/sfml-populate-stamp/sfml-populate-patch	715bedff2387fe7f
+26739	26815	7533613070249803	sfml-populate-prefix/src/sfml-populate-stamp/sfml-populate-configure	a64be400a70748b7
+26739	26815	7533613070249803	C:/C++/TP/Project/DameCplusplus/cmake-build-debug/_deps/sfml-subbuild/sfml-populate-prefix/src/sfml-populate-stamp/sfml-populate-configure	a64be400a70748b7
+26815	26893	7533613071032082	sfml-populate-prefix/src/sfml-populate-stamp/sfml-populate-build	a4b21f333f353b4b
+26815	26893	7533613071032082	C:/C++/TP/Project/DameCplusplus/cmake-build-debug/_deps/sfml-subbuild/sfml-populate-prefix/src/sfml-populate-stamp/sfml-populate-build	a4b21f333f353b4b
+26893	26967	7533613071757036	sfml-populate-prefix/src/sfml-populate-stamp/sfml-populate-install	80274cf1dbd69b91
+26893	26967	7533613071757036	C:/C++/TP/Project/DameCplusplus/cmake-build-debug/_deps/sfml-subbuild/sfml-populate-prefix/src/sfml-populate-stamp/sfml-populate-install	80274cf1dbd69b91
+26967	27035	7533613072460568	sfml-populate-prefix/src/sfml-populate-stamp/sfml-populate-test	7faf9b44e6051c03
+26967	27035	7533613072460568	C:/C++/TP/Project/DameCplusplus/cmake-build-debug/_deps/sfml-subbuild/sfml-populate-prefix/src/sfml-populate-stamp/sfml-populate-test	7faf9b44e6051c03
+27035	27129	7533613073397484	CMakeFiles/sfml-populate-complete	ba0a6aa4f0a38ba6
+27035	27129	7533613073397484	sfml-populate-prefix/src/sfml-populate-stamp/sfml-populate-done	ba0a6aa4f0a38ba6
+27035	27129	7533613073397484	C:/C++/TP/Project/DameCplusplus/cmake-build-debug/_deps/sfml-subbuild/CMakeFiles/sfml-populate-complete	ba0a6aa4f0a38ba6
+27035	27129	7533613073397484	C:/C++/TP/Project/DameCplusplus/cmake-build-debug/_deps/sfml-subbuild/sfml-populate-prefix/src/sfml-populate-stamp/sfml-populate-done	ba0a6aa4f0a38ba6

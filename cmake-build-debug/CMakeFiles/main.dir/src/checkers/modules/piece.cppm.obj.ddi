@@ -1,0 +1,16 @@
+{
+  "revision": 0,
+  "rules": [
+    {
+      "primary-output": "CMakeFiles\\main.dir\\src\\checkers\\modules\\piece.cppm.obj",
+      "provides": [
+        {
+          "is-interface": true,
+          "logical-name": "piece",
+          "source-path": "C:/C++/TP/Project/DameCplusplus/src/checkers/modules/piece.cppm"
+        }
+      ]
+    }
+  ],
+  "version": 1
+}
