@@ -6,6 +6,15 @@
       "requires": [
         {
           "logical-name": "board"
+        },
+        {
+          "logical-name": "position"
+        },
+        {
+          "logical-name": "windowManager"
+        },
+        {
+          "logical-name": "game"
         }
       ]
     }

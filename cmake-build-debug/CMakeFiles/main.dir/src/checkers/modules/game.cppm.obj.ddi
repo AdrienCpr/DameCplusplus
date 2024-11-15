@@ -1,0 +1,24 @@
+{
+  "revision": 0,
+  "rules": [
+    {
+      "primary-output": "CMakeFiles\\main.dir\\src\\checkers\\modules\\game.cppm.obj",
+      "provides": [
+        {
+          "is-interface": true,
+          "logical-name": "game",
+          "source-path": "C:/C++/TP/Project/DameCplusplus/src/checkers/modules/game.cppm"
+        }
+      ],
+      "requires": [
+        {
+          "logical-name": "board"
+        },
+        {
+          "logical-name": "position"
+        }
+      ]
+    }
+  ],
+  "version": 1
+}

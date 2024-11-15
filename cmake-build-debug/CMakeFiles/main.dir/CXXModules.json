@@ -6,6 +6,11 @@
 			"bmi" : "C:/C++/TP/Project/DameCplusplus/cmake-build-debug/CMakeFiles/main.dir/board.pcm",
 			"is-private" : false
 		},
+		"game" : 
+		{
+			"bmi" : "C:/C++/TP/Project/DameCplusplus/cmake-build-debug/CMakeFiles/main.dir/game.pcm",
+			"is-private" : false
+		},
 		"piece" : 
 		{
 			"bmi" : "C:/C++/TP/Project/DameCplusplus/cmake-build-debug/CMakeFiles/main.dir/piece.pcm",
@@ -14,6 +19,11 @@
 		"position" : 
 		{
 			"bmi" : "C:/C++/TP/Project/DameCplusplus/cmake-build-debug/CMakeFiles/main.dir/position.pcm",
+			"is-private" : false
+		},
+		"windowManager" : 
+		{
+			"bmi" : "C:/C++/TP/Project/DameCplusplus/cmake-build-debug/CMakeFiles/main.dir/windowManager.pcm",
 			"is-private" : false
 		}
 	},
@@ -24,6 +34,11 @@
 			"lookup-method" : "by-name",
 			"path" : "CMakeFiles/main.dir/board.pcm"
 		},
+		"game" : 
+		{
+			"lookup-method" : "by-name",
+			"path" : "CMakeFiles/main.dir/game.pcm"
+		},
 		"piece" : 
 		{
 			"lookup-method" : "by-name",
@@ -33,12 +48,23 @@
 		{
 			"lookup-method" : "by-name",
 			"path" : "CMakeFiles/main.dir/position.pcm"
+		},
+		"windowManager" : 
+		{
+			"lookup-method" : "by-name",
+			"path" : "CMakeFiles/main.dir/windowManager.pcm"
 		}
 	},
 	"usages" : 
 	{
 		"board" : 
 		[
+			"piece",
+			"position"
+		],
+		"game" : 
+		[
+			"board",
 			"piece",
 			"position"
 		]

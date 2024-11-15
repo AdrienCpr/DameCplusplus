@@ -16,6 +16,16 @@
 			"type" : "CXX_MODULES",
 			"visibility" : "PUBLIC"
 		},
+		"CMakeFiles/main.dir/src/checkers/modules/game.cppm.obj" : 
+		{
+			"bmi-only" : false,
+			"destination" : null,
+			"name" : "CXX_MODULES",
+			"relative-directory" : "src/checkers/modules",
+			"source" : "C:/C++/TP/Project/DameCplusplus/src/checkers/modules/game.cppm",
+			"type" : "CXX_MODULES",
+			"visibility" : "PUBLIC"
+		},
 		"CMakeFiles/main.dir/src/checkers/modules/piece.cppm.obj" : 
 		{
 			"bmi-only" : false,
@@ -33,6 +43,16 @@
 			"name" : "CXX_MODULES",
 			"relative-directory" : "src/checkers/modules",
 			"source" : "C:/C++/TP/Project/DameCplusplus/src/checkers/modules/position.cppm",
+			"type" : "CXX_MODULES",
+			"visibility" : "PUBLIC"
+		},
+		"CMakeFiles/main.dir/src/checkers/modules/windowManager.cppm.obj" : 
+		{
+			"bmi-only" : false,
+			"destination" : null,
+			"name" : "CXX_MODULES",
+			"relative-directory" : "src/checkers/modules",
+			"source" : "C:/C++/TP/Project/DameCplusplus/src/checkers/modules/windowManager.cppm",
 			"type" : "CXX_MODULES",
 			"visibility" : "PUBLIC"
 		}

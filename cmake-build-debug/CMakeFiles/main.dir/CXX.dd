@@ -1,5 +1,5 @@
 ninja_dyndep_version = 1.0
-build CMakeFiles/main.dir/src/main.cpp.obj: dyndep | CMakeFiles/main.dir/board.pcm
+build CMakeFiles/main.dir/src/main.cpp.obj: dyndep | CMakeFiles/main.dir/board.pcm CMakeFiles/main.dir/position.pcm CMakeFiles/main.dir/windowManager.pcm CMakeFiles/main.dir/game.pcm
 
 build CMakeFiles/main.dir/src/checkers/board.cpp.obj: dyndep | CMakeFiles/main.dir/piece.pcm CMakeFiles/main.dir/position.pcm CMakeFiles/main.dir/board.pcm
 
@@ -14,5 +14,11 @@ build CMakeFiles/main.dir/src/checkers/modules/piece.cppm.obj | CMakeFiles/main.
   restat = 1
 
 build CMakeFiles/main.dir/src/checkers/modules/position.cppm.obj | CMakeFiles/main.dir/position.pcm: dyndep
+  restat = 1
+
+build CMakeFiles/main.dir/src/checkers/modules/game.cppm.obj | CMakeFiles/main.dir/game.pcm: dyndep | CMakeFiles/main.dir/board.pcm CMakeFiles/main.dir/position.pcm
+  restat = 1
+
+build CMakeFiles/main.dir/src/checkers/modules/windowManager.cppm.obj | CMakeFiles/main.dir/windowManager.pcm: dyndep
   restat = 1
 

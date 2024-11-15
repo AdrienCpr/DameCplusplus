@@ -1,0 +1,16 @@
+{
+  "revision": 0,
+  "rules": [
+    {
+      "primary-output": "CMakeFiles\\main.dir\\src\\checkers\\modules\\windowManager.cppm.obj",
+      "provides": [
+        {
+          "is-interface": true,
+          "logical-name": "windowManager",
+          "source-path": "C:/C++/TP/Project/DameCplusplus/src/checkers/modules/windowManager.cppm"
+        }
+      ]
+    }
+  ],
+  "version": 1
+}

@@ -29,9 +29,16 @@ target_sources(
         src/checkers/modules/board.cppm
         src/checkers/modules/piece.cppm
         src/checkers/modules/position.cppm
+        src/checkers/modules/game.cppm
+        src/checkers/modules/windowManager.cppm
 )
 
-target_link_libraries(main PRIVATE sfml-graphics)
+target_link_libraries(main PRIVATE
+        sfml-graphics
+        sfml-window
+        sfml-system
+        sfml-audio
+)
 target_compile_features(main PRIVATE cxx_std_23)
 
 if(WIN32)

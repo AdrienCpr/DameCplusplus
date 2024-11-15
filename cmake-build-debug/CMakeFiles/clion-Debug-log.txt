@@ -25,6 +25,6 @@
 -- Found OpenAL: C:/C++/TP/Project/DameCplusplus/cmake-build-debug/_deps/sfml-src/extlibs/libs-mingw/x64/libopenal32.a
 -- Found VORBIS: C:/C++/TP/Project/DameCplusplus/cmake-build-debug/_deps/sfml-src/extlibs/libs-mingw/x64/libvorbisenc.a;C:/C++/TP/Project/DameCplusplus/cmake-build-debug/_deps/sfml-src/extlibs/libs-mingw/x64/libvorbisfile.a;C:/C++/TP/Project/DameCplusplus/cmake-build-debug/_deps/sfml-src/extlibs/libs-mingw/x64/libvorbis.a;C:/C++/TP/Project/DameCplusplus/cmake-build-debug/_deps/sfml-src/extlibs/libs-mingw/x64/libogg.a
 -- Found FLAC: C:/C++/TP/Project/DameCplusplus/cmake-build-debug/_deps/sfml-src/extlibs/libs-mingw/x64/libFLAC.a
--- Configuring done (33.8s)
--- Generating done (0.1s)
+-- Configuring done (27.1s)
+-- Generating done (0.0s)
 -- Build files have been written to: C:/C++/TP/Project/DameCplusplus/cmake-build-debug
