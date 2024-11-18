@@ -144,3 +144,17 @@
 35	70	7536274721714526	CMakeFiles/main.dir/src/checkers/modules/position.cppm.obj.modmap	dededce791c9290e
 35	70	7536274721714526	CMakeFiles/main.dir/src/checkers/modules/game.cppm.obj.modmap	dededce791c9290e
 35	70	7536274721714526	CMakeFiles/main.dir/src/checkers/modules/windowManager.cppm.obj.modmap	dededce791c9290e
+53	608	7536399480642754	CMakeFiles/main.dir/src/checkers/board.cpp.obj.ddi	5ce28a4009c0a760
+608	758	7536399486195484	CMakeFiles/main.dir/CXX.dd	dededce791c9290e
+608	758	7536399486195484	C:/C++/TP/Project/DameCplusplus/cmake-build-debug/CMakeFiles/main.dir/CXXModules.json	dededce791c9290e
+608	758	7536399486195484	CMakeFiles/main.dir/src/main.cpp.obj.modmap	dededce791c9290e
+608	758	7536399486195484	CMakeFiles/main.dir/src/checkers/board.cpp.obj.modmap	dededce791c9290e
+608	758	7536399486195484	CMakeFiles/main.dir/src/checkers/piece.cpp.obj.modmap	dededce791c9290e
+608	758	7536399486195484	CMakeFiles/main.dir/src/checkers/position.cpp.obj.modmap	dededce791c9290e
+608	758	7536399486195484	CMakeFiles/main.dir/src/checkers/modules/board.cppm.obj.modmap	dededce791c9290e
+608	758	7536399486195484	CMakeFiles/main.dir/src/checkers/modules/piece.cppm.obj.modmap	dededce791c9290e
+608	758	7536399486195484	CMakeFiles/main.dir/src/checkers/modules/position.cppm.obj.modmap	dededce791c9290e
+608	758	7536399486195484	CMakeFiles/main.dir/src/checkers/modules/game.cppm.obj.modmap	dededce791c9290e
+608	758	7536399486195484	CMakeFiles/main.dir/src/checkers/modules/windowManager.cppm.obj.modmap	dededce791c9290e
+771	3825	7536399487827273	CMakeFiles/main.dir/src/checkers/board.cpp.obj	aa278c8d676b5327
+3826	4252	7536399518366579	bin/main.exe	4b9f68eb26f979ce

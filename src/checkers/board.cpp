@@ -63,15 +63,16 @@ namespace board {
             return false;
         }
 
-        int rowDiff = std::abs(to.row - from.row);
+        int rowDiff = to.row - from.row;
         int colDiff = std::abs(to.col - from.col);
 
         auto piece = grid[from.row][from.col].get();
 
         if (dynamic_cast<piece::King*>(piece)) {
-            return (rowDiff == colDiff && rowDiff > 0);
+            return (std::abs(rowDiff) == std::abs(colDiff) && std::abs(rowDiff) == 1);
         } else {
-            return (rowDiff == 1 && colDiff == 1);
+            int allowedDirection = (piece->color == PieceColor::White) ? -1 : 1;
+            return (rowDiff == allowedDirection && colDiff == 1);
         }
     }
 
@@ -81,27 +82,25 @@ namespace board {
             return false;
         }
 
-        int rowDiff = std::abs(to.row - from.row);
-        int colDiff = std::abs(to.col - from.col);
+        int rowDiff = to.row - from.row;
+        int colDiff = to.col - from.col;
 
         auto piece = grid[from.row][from.col].get();
 
         if (dynamic_cast<piece::King*>(piece)) {
-            if (rowDiff > 2 && colDiff > 2) {
+            if (std::abs(rowDiff) > 1 && std::abs(rowDiff) == std::abs(colDiff)) {
                 int midRow = (from.row + to.row) / 2;
                 int midCol = (from.col + to.col) / 2;
 
-                if (grid[midRow][midCol] && grid[midRow][midCol]->color != piece->color) {
-                    return true;
-                }
+                return grid[midRow][midCol] && grid[midRow][midCol]->color != piece->color;
             }
         } else {
-            if (rowDiff == 2 && colDiff == 2) {
+            int allowedDirection = (piece->color == PieceColor::White) ? -2 : 2;
+            if (rowDiff == allowedDirection && std::abs(colDiff) == 2) {
                 int midRow = (from.row + to.row) / 2;
                 int midCol = (from.col + to.col) / 2;
-                if (grid[midRow][midCol] && grid[midRow][midCol]->color != piece->color) {
-                    return true;
-                }
+
+                return grid[midRow][midCol] && grid[midRow][midCol]->color != piece->color;
             }
         }
 
