@@ -33,7 +33,7 @@ int main() {
         }
 
         window.clear(sf::Color(50, 50, 50));
-        gameBoard.draw(window);
+        gameBoard.draw(window, selectedPos);
         window.display();
     }
 

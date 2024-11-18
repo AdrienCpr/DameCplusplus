@@ -18,7 +18,7 @@ export namespace board {
         GameBoard();
         void setupPieces();
         void promoteToKing(const position::Position& pos);
-        void draw(sf::RenderWindow &window) const;
+        void draw(sf::RenderWindow &window, const position::Position& selectedPos) const;
 
         bool movePiece(const position::Position& from, const position::Position& to);
         bool capturePiece(const position::Position& from, const position::Position& to);

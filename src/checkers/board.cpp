@@ -43,24 +43,37 @@ namespace board {
         }
     }
 
-    void GameBoard::draw(sf::RenderWindow &window) const {
+    void GameBoard::draw(sf::RenderWindow &window, const position::Position& selectedPos) const {
         const float tileSize = 800.0f / size;
 
         for (int row = 0; row < size; ++row) {
             for (int col = 0; col < size; ++col) {
                 sf::RectangleShape tile({tileSize, tileSize});
                 tile.setPosition(col * tileSize, row * tileSize);
-                tile.setFillColor((row + col) % 2 == 0 ? sf::Color( 254 , 254 , 226) : sf::Color(139, 69, 19));
+                tile.setFillColor((row + col) % 2 == 0 ? sf::Color(254, 254, 226) : sf::Color(139, 69, 19));
                 window.draw(tile);
 
                 if (grid[row][col]) {
                     auto pieceShape = grid[row][col]->draw(tileSize * 0.8f);
                     pieceShape.setPosition(col * tileSize + tileSize * 0.1f, row * tileSize + tileSize * 0.1f);
                     window.draw(pieceShape);
+
+                    if (selectedPos.row == row && selectedPos.col == col && grid[row][col]->color == currentPlayer) {
+                        sf::RectangleShape highlight({tileSize * 0.9f, tileSize * 0.9f});
+                        highlight.setFillColor(sf::Color::Transparent);
+                        highlight.setOutlineColor(sf::Color::Yellow);
+                        highlight.setOutlineThickness(3);
+                        highlight.setPosition(
+                            col * tileSize + tileSize * 0.05f,
+                            row * tileSize + tileSize * 0.05f
+                        );
+                        window.draw(highlight);
+                    }
                 }
             }
         }
     }
+
 
     bool GameBoard::isValidMove(const position::Position& from, const position::Position& to) const {
         if (!to.isValid() || grid[to.row][to.col]) {
