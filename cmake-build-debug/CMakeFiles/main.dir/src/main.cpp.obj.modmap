@@ -3,3 +3,4 @@
 -fmodule-file=windowManager=CMakeFiles/main.dir/windowManager.pcm
 -fmodule-file=game=CMakeFiles/main.dir/game.pcm
 -fmodule-file=piece=CMakeFiles/main.dir/piece.pcm
+-fmodule-file=soundManager=CMakeFiles/main.dir/soundManager.pcm

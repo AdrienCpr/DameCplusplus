@@ -19,6 +19,7 @@ add_executable(
         src/checkers/board.cpp
         src/checkers/piece.cpp
         src/checkers/position.cpp
+        src/checkers/soundManager.cpp
 )
 
 target_sources(
@@ -31,6 +32,7 @@ target_sources(
         src/checkers/modules/position.cppm
         src/checkers/modules/game.cppm
         src/checkers/modules/windowManager.cppm
+        src/checkers/modules/soundManager.cppm
 )
 
 target_link_libraries(main PRIVATE
@@ -47,4 +49,10 @@ if(WIN32)
             COMMENT "Copy OpenAL DLL"
             PRE_BUILD COMMAND ${CMAKE_COMMAND} -E copy ${SFML_SOURCE_DIR}/extlibs/bin/$<IF:$<EQUAL:${CMAKE_SIZEOF_VOID_P},8>,x64,x86>/openal32.dll $<TARGET_FILE_DIR:main>
             VERBATIM)
+
+    add_custom_command(
+            TARGET main POST_BUILD
+            COMMAND ${CMAKE_COMMAND} -E copy_directory
+            ${CMAKE_SOURCE_DIR}/resources $<TARGET_FILE_DIR:main>/resources
+    )
 endif()

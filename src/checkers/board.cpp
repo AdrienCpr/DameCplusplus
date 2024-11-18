@@ -6,9 +6,13 @@ module board;
 
 import piece;
 import position;
+import soundManager;
 
 namespace board {
-    GameBoard::GameBoard() : grid(size), currentPlayer(PieceColor::White) {
+    GameBoard::GameBoard()
+        : grid(size),
+          currentPlayer(PieceColor::White),
+          soundManager(std::make_unique<soundManager::SoundManager>()) {
         for (auto& row : grid) {
             row.resize(size);
         }
@@ -116,6 +120,9 @@ namespace board {
 
                 if (to.row == 0 || to.row == size - 1) {
                     promoteToKing(to);
+                    soundManager->playSound("promote");
+                } else {
+                    soundManager->playSound("move");
                 }
 
                 currentPlayer = (currentPlayer == PieceColor::White) ? PieceColor::Black : PieceColor::White;
@@ -136,6 +143,9 @@ namespace board {
 
             if (to.row == 0 || to.row == size - 1) {
                 promoteToKing(to);
+                soundManager->playSound("promote");
+            } else {
+                soundManager->playSound("capture");
             }
 
             return true;

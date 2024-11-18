@@ -16,6 +16,9 @@
         },
         {
           "logical-name": "position"
+        },
+        {
+          "logical-name": "soundManager"
         }
       ]
     }

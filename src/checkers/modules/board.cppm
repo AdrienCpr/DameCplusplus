@@ -8,6 +8,7 @@ export module board;
 
 import piece;
 import position;
+import soundManager;
 
 export namespace board {
     class GameBoard {
@@ -30,5 +31,6 @@ export namespace board {
     private:
         std::vector<std::vector<std::unique_ptr<piece::Piece>>> grid;
         PieceColor currentPlayer;
+        std::unique_ptr<soundManager::SoundManager> soundManager;
     };
 }

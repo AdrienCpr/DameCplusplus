@@ -61,8 +61,8 @@ events:
     checks:
       - "Detecting C compiler ABI info"
     directories:
-      source: "C:/C++/TP/Project/DameCplusplus/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-rpitkq"
-      binary: "C:/C++/TP/Project/DameCplusplus/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-rpitkq"
+      source: "C:/C++/TP/Project/DameCplusplus/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-7dzrxm"
+      binary: "C:/C++/TP/Project/DameCplusplus/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-7dzrxm"
     cmakeVariables:
       CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "C:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/bin/clang-scan-deps.exe"
       CMAKE_C_FLAGS: ""
@@ -72,16 +72,16 @@ events:
       variable: "CMAKE_C_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: 'C:/C++/TP/Project/DameCplusplus/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-rpitkq'
+        Change Dir: 'C:/C++/TP/Project/DameCplusplus/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-7dzrxm'
         
-        Run Build Command(s): "C:/Program Files/JetBrains/CLion 2024.2.3/bin/ninja/win/x64/ninja.exe" -v cmTC_f1a4d
-        [1/2] C:\\Compilateurs\\llvm-mingw-20240619-msvcrt-x86_64\\bin\\cc.exe   -fansi-escape-codes -fcolor-diagnostics   -v -MD -MT CMakeFiles/cmTC_f1a4d.dir/CMakeCCompilerABI.c.obj -MF CMakeFiles\\cmTC_f1a4d.dir\\CMakeCCompilerABI.c.obj.d -o CMakeFiles/cmTC_f1a4d.dir/CMakeCCompilerABI.c.obj -c "C:/Program Files/JetBrains/CLion 2024.2.3/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeCCompilerABI.c"
+        Run Build Command(s): "C:/Program Files/JetBrains/CLion 2024.2.3/bin/ninja/win/x64/ninja.exe" -v cmTC_7e1bd
+        [1/2] C:\\Compilateurs\\llvm-mingw-20240619-msvcrt-x86_64\\bin\\cc.exe   -fansi-escape-codes -fcolor-diagnostics   -v -MD -MT CMakeFiles/cmTC_7e1bd.dir/CMakeCCompilerABI.c.obj -MF CMakeFiles\\cmTC_7e1bd.dir\\CMakeCCompilerABI.c.obj.d -o CMakeFiles/cmTC_7e1bd.dir/CMakeCCompilerABI.c.obj -c "C:/Program Files/JetBrains/CLion 2024.2.3/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeCCompilerABI.c"
         clang version 18.1.8 (https://github.com/llvm/llvm-project.git 3b5b5c1ec4a3095ab096dd780e84d7ab81f3d7ff)
         Target: x86_64-w64-windows-gnu
         Thread model: posix
         InstalledDir: C:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/bin
          (in-process)
-         "C:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/bin/clang-18.exe" -cc1 -triple x86_64-w64-windows-gnu -emit-obj -mrelax-all -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCCompilerABI.c -mrelocation-model pic -pic-level 2 -mframe-pointer=none -fmath-errno -ffp-contract=on -fno-rounding-math -mconstructor-aliases -mms-bitfields -funwind-tables=2 -fno-use-init-array -target-cpu x86-64 -tune-cpu generic -debugger-tuning=gdb -fdebug-compilation-dir=C:/C++/TP/Project/DameCplusplus/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-rpitkq -v -fcoverage-compilation-dir=C:/C++/TP/Project/DameCplusplus/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-rpitkq -resource-dir C:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/lib/clang/18 -dependency-file "CMakeFiles\\\\cmTC_f1a4d.dir\\\\CMakeCCompilerABI.c.obj.d" -MT CMakeFiles/cmTC_f1a4d.dir/CMakeCCompilerABI.c.obj -sys-header-deps -internal-isystem C:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/lib/clang/18/include -internal-isystem C:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/x86_64-w64-mingw32/include -internal-isystem C:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/x86_64-w64-mingw32/usr/include -internal-isystem C:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/include -ferror-limit 19 -fno-use-cxa-atexit -fgnuc-version=4.2.1 -fskip-odr-check-in-gmf -exception-model=seh -fcolor-diagnostics -fansi-escape-codes -faddrsig -o CMakeFiles/cmTC_f1a4d.dir/CMakeCCompilerABI.c.obj -x c "C:/Program Files/JetBrains/CLion 2024.2.3/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeCCompilerABI.c"
+         "C:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/bin/clang-18.exe" -cc1 -triple x86_64-w64-windows-gnu -emit-obj -mrelax-all -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCCompilerABI.c -mrelocation-model pic -pic-level 2 -mframe-pointer=none -fmath-errno -ffp-contract=on -fno-rounding-math -mconstructor-aliases -mms-bitfields -funwind-tables=2 -fno-use-init-array -target-cpu x86-64 -tune-cpu generic -debugger-tuning=gdb -fdebug-compilation-dir=C:/C++/TP/Project/DameCplusplus/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-7dzrxm -v -fcoverage-compilation-dir=C:/C++/TP/Project/DameCplusplus/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-7dzrxm -resource-dir C:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/lib/clang/18 -dependency-file "CMakeFiles\\\\cmTC_7e1bd.dir\\\\CMakeCCompilerABI.c.obj.d" -MT CMakeFiles/cmTC_7e1bd.dir/CMakeCCompilerABI.c.obj -sys-header-deps -internal-isystem C:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/lib/clang/18/include -internal-isystem C:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/x86_64-w64-mingw32/include -internal-isystem C:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/x86_64-w64-mingw32/usr/include -internal-isystem C:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/include -ferror-limit 19 -fno-use-cxa-atexit -fgnuc-version=4.2.1 -fskip-odr-check-in-gmf -exception-model=seh -fcolor-diagnostics -fansi-escape-codes -faddrsig -o CMakeFiles/cmTC_7e1bd.dir/CMakeCCompilerABI.c.obj -x c "C:/Program Files/JetBrains/CLion 2024.2.3/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeCCompilerABI.c"
         clang -cc1 version 18.1.8 based upon LLVM 18.1.8 default target x86_64-w64-mingw32
         ignoring nonexistent directory "C:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/x86_64-w64-mingw32/include"\x0d
         ignoring nonexistent directory "C:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/x86_64-w64-mingw32/usr/include"\x0d
@@ -90,12 +90,12 @@ events:
          C:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/lib/clang/18/include\x0d
          C:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/include\x0d
         End of search list.\x0d
-        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && C:\\Compilateurs\\llvm-mingw-20240619-msvcrt-x86_64\\bin\\cc.exe  -v -Wl,-v CMakeFiles/cmTC_f1a4d.dir/CMakeCCompilerABI.c.obj -o cmTC_f1a4d.exe -Wl,--out-implib,libcmTC_f1a4d.dll.a -Wl,--major-image-version,0,--minor-image-version,0   && cd ."
+        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && C:\\Compilateurs\\llvm-mingw-20240619-msvcrt-x86_64\\bin\\cc.exe  -v -Wl,-v CMakeFiles/cmTC_7e1bd.dir/CMakeCCompilerABI.c.obj -o cmTC_7e1bd.exe -Wl,--out-implib,libcmTC_7e1bd.dll.a -Wl,--major-image-version,0,--minor-image-version,0   && cd ."
         clang version 18.1.8 (https://github.com/llvm/llvm-project.git 3b5b5c1ec4a3095ab096dd780e84d7ab81f3d7ff)
         Target: x86_64-w64-windows-gnu
         Thread model: posix
         InstalledDir: C:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/bin
-         "C:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/bin/ld.lld" -m i386pep -Bdynamic -o cmTC_f1a4d.exe C:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/x86_64-w64-mingw32/lib/crt2.o C:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/x86_64-w64-mingw32/lib/crtbegin.o -LC:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/x86_64-w64-mingw32/lib -LC:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/x86_64-w64-mingw32/mingw/lib -LC:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/lib -LC:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/lib/clang/18/lib/windows -v CMakeFiles/cmTC_f1a4d.dir/CMakeCCompilerABI.c.obj --out-implib libcmTC_f1a4d.dll.a --major-image-version 0 --minor-image-version 0 -lmingw32 C:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/lib/clang/18/lib/windows/libclang_rt.builtins-x86_64.a -lunwind -lmoldname -lmingwex -lmsvcrt -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 C:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/lib/clang/18/lib/windows/libclang_rt.builtins-x86_64.a -lunwind -lmoldname -lmingwex -lmsvcrt -lkernel32 C:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/x86_64-w64-mingw32/lib/crtend.o\x0d
+         "C:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/bin/ld.lld" -m i386pep -Bdynamic -o cmTC_7e1bd.exe C:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/x86_64-w64-mingw32/lib/crt2.o C:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/x86_64-w64-mingw32/lib/crtbegin.o -LC:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/x86_64-w64-mingw32/lib -LC:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/x86_64-w64-mingw32/mingw/lib -LC:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/lib -LC:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/lib/clang/18/lib/windows -v CMakeFiles/cmTC_7e1bd.dir/CMakeCCompilerABI.c.obj --out-implib libcmTC_7e1bd.dll.a --major-image-version 0 --minor-image-version 0 -lmingw32 C:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/lib/clang/18/lib/windows/libclang_rt.builtins-x86_64.a -lunwind -lmoldname -lmingwex -lmsvcrt -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 C:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/lib/clang/18/lib/windows/libclang_rt.builtins-x86_64.a -lunwind -lmoldname -lmingwex -lmsvcrt -lkernel32 C:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/x86_64-w64-mingw32/lib/crtend.o\x0d
         LLD 18.1.8 (compatible with GNU linkers)
         
       exitCode: 0
@@ -127,16 +127,16 @@ events:
       Parsed C implicit link information:
         link line regex: [^( *|.*[/\\])(ld[0-9]*(\\.[a-z]+)?|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
         linker tool regex: [^[ 	]*(->|")?[ 	]*(([^"]*[/\\])?(ld[0-9]*(\\.[a-z]+)?))("|,| |$)]
-        ignore line: [Change Dir: 'C:/C++/TP/Project/DameCplusplus/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-rpitkq']
+        ignore line: [Change Dir: 'C:/C++/TP/Project/DameCplusplus/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-7dzrxm']
         ignore line: []
-        ignore line: [Run Build Command(s): "C:/Program Files/JetBrains/CLion 2024.2.3/bin/ninja/win/x64/ninja.exe" -v cmTC_f1a4d]
-        ignore line: [[1/2] C:\\Compilateurs\\llvm-mingw-20240619-msvcrt-x86_64\\bin\\cc.exe   -fansi-escape-codes -fcolor-diagnostics   -v -MD -MT CMakeFiles/cmTC_f1a4d.dir/CMakeCCompilerABI.c.obj -MF CMakeFiles\\cmTC_f1a4d.dir\\CMakeCCompilerABI.c.obj.d -o CMakeFiles/cmTC_f1a4d.dir/CMakeCCompilerABI.c.obj -c "C:/Program Files/JetBrains/CLion 2024.2.3/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeCCompilerABI.c"]
+        ignore line: [Run Build Command(s): "C:/Program Files/JetBrains/CLion 2024.2.3/bin/ninja/win/x64/ninja.exe" -v cmTC_7e1bd]
+        ignore line: [[1/2] C:\\Compilateurs\\llvm-mingw-20240619-msvcrt-x86_64\\bin\\cc.exe   -fansi-escape-codes -fcolor-diagnostics   -v -MD -MT CMakeFiles/cmTC_7e1bd.dir/CMakeCCompilerABI.c.obj -MF CMakeFiles\\cmTC_7e1bd.dir\\CMakeCCompilerABI.c.obj.d -o CMakeFiles/cmTC_7e1bd.dir/CMakeCCompilerABI.c.obj -c "C:/Program Files/JetBrains/CLion 2024.2.3/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeCCompilerABI.c"]
         ignore line: [clang version 18.1.8 (https://github.com/llvm/llvm-project.git 3b5b5c1ec4a3095ab096dd780e84d7ab81f3d7ff)]
         ignore line: [Target: x86_64-w64-windows-gnu]
         ignore line: [Thread model: posix]
         ignore line: [InstalledDir: C:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/bin]
         ignore line: [ (in-process)]
-        ignore line: [ "C:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/bin/clang-18.exe" -cc1 -triple x86_64-w64-windows-gnu -emit-obj -mrelax-all -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCCompilerABI.c -mrelocation-model pic -pic-level 2 -mframe-pointer=none -fmath-errno -ffp-contract=on -fno-rounding-math -mconstructor-aliases -mms-bitfields -funwind-tables=2 -fno-use-init-array -target-cpu x86-64 -tune-cpu generic -debugger-tuning=gdb -fdebug-compilation-dir=C:/C++/TP/Project/DameCplusplus/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-rpitkq -v -fcoverage-compilation-dir=C:/C++/TP/Project/DameCplusplus/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-rpitkq -resource-dir C:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/lib/clang/18 -dependency-file "CMakeFiles\\\\cmTC_f1a4d.dir\\\\CMakeCCompilerABI.c.obj.d" -MT CMakeFiles/cmTC_f1a4d.dir/CMakeCCompilerABI.c.obj -sys-header-deps -internal-isystem C:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/lib/clang/18/include -internal-isystem C:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/x86_64-w64-mingw32/include -internal-isystem C:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/x86_64-w64-mingw32/usr/include -internal-isystem C:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/include -ferror-limit 19 -fno-use-cxa-atexit -fgnuc-version=4.2.1 -fskip-odr-check-in-gmf -exception-model=seh -fcolor-diagnostics -fansi-escape-codes -faddrsig -o CMakeFiles/cmTC_f1a4d.dir/CMakeCCompilerABI.c.obj -x c "C:/Program Files/JetBrains/CLion 2024.2.3/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeCCompilerABI.c"]
+        ignore line: [ "C:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/bin/clang-18.exe" -cc1 -triple x86_64-w64-windows-gnu -emit-obj -mrelax-all -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCCompilerABI.c -mrelocation-model pic -pic-level 2 -mframe-pointer=none -fmath-errno -ffp-contract=on -fno-rounding-math -mconstructor-aliases -mms-bitfields -funwind-tables=2 -fno-use-init-array -target-cpu x86-64 -tune-cpu generic -debugger-tuning=gdb -fdebug-compilation-dir=C:/C++/TP/Project/DameCplusplus/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-7dzrxm -v -fcoverage-compilation-dir=C:/C++/TP/Project/DameCplusplus/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-7dzrxm -resource-dir C:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/lib/clang/18 -dependency-file "CMakeFiles\\\\cmTC_7e1bd.dir\\\\CMakeCCompilerABI.c.obj.d" -MT CMakeFiles/cmTC_7e1bd.dir/CMakeCCompilerABI.c.obj -sys-header-deps -internal-isystem C:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/lib/clang/18/include -internal-isystem C:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/x86_64-w64-mingw32/include -internal-isystem C:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/x86_64-w64-mingw32/usr/include -internal-isystem C:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/include -ferror-limit 19 -fno-use-cxa-atexit -fgnuc-version=4.2.1 -fskip-odr-check-in-gmf -exception-model=seh -fcolor-diagnostics -fansi-escape-codes -faddrsig -o CMakeFiles/cmTC_7e1bd.dir/CMakeCCompilerABI.c.obj -x c "C:/Program Files/JetBrains/CLion 2024.2.3/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeCCompilerABI.c"]
         ignore line: [clang -cc1 version 18.1.8 based upon LLVM 18.1.8 default target x86_64-w64-mingw32]
         ignore line: [ignoring nonexistent directory "C:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/x86_64-w64-mingw32/include"\x0d]
         ignore line: [ignoring nonexistent directory "C:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/x86_64-w64-mingw32/usr/include"\x0d]
@@ -145,18 +145,18 @@ events:
         ignore line: [ C:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/lib/clang/18/include\x0d]
         ignore line: [ C:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/include\x0d]
         ignore line: [End of search list.\x0d]
-        ignore line: [[2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && C:\\Compilateurs\\llvm-mingw-20240619-msvcrt-x86_64\\bin\\cc.exe  -v -Wl -v CMakeFiles/cmTC_f1a4d.dir/CMakeCCompilerABI.c.obj -o cmTC_f1a4d.exe -Wl --out-implib libcmTC_f1a4d.dll.a -Wl --major-image-version 0 --minor-image-version 0   && cd ."]
+        ignore line: [[2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && C:\\Compilateurs\\llvm-mingw-20240619-msvcrt-x86_64\\bin\\cc.exe  -v -Wl -v CMakeFiles/cmTC_7e1bd.dir/CMakeCCompilerABI.c.obj -o cmTC_7e1bd.exe -Wl --out-implib libcmTC_7e1bd.dll.a -Wl --major-image-version 0 --minor-image-version 0   && cd ."]
         ignore line: [clang version 18.1.8 (https://github.com/llvm/llvm-project.git 3b5b5c1ec4a3095ab096dd780e84d7ab81f3d7ff)]
         ignore line: [Target: x86_64-w64-windows-gnu]
         ignore line: [Thread model: posix]
         ignore line: [InstalledDir: C:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/bin]
-        link line: [ "C:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/bin/ld.lld" -m i386pep -Bdynamic -o cmTC_f1a4d.exe C:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/x86_64-w64-mingw32/lib/crt2.o C:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/x86_64-w64-mingw32/lib/crtbegin.o -LC:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/x86_64-w64-mingw32/lib -LC:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/x86_64-w64-mingw32/mingw/lib -LC:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/lib -LC:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/lib/clang/18/lib/windows -v CMakeFiles/cmTC_f1a4d.dir/CMakeCCompilerABI.c.obj --out-implib libcmTC_f1a4d.dll.a --major-image-version 0 --minor-image-version 0 -lmingw32 C:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/lib/clang/18/lib/windows/libclang_rt.builtins-x86_64.a -lunwind -lmoldname -lmingwex -lmsvcrt -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 C:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/lib/clang/18/lib/windows/libclang_rt.builtins-x86_64.a -lunwind -lmoldname -lmingwex -lmsvcrt -lkernel32 C:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/x86_64-w64-mingw32/lib/crtend.o\x0d]
+        link line: [ "C:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/bin/ld.lld" -m i386pep -Bdynamic -o cmTC_7e1bd.exe C:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/x86_64-w64-mingw32/lib/crt2.o C:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/x86_64-w64-mingw32/lib/crtbegin.o -LC:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/x86_64-w64-mingw32/lib -LC:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/x86_64-w64-mingw32/mingw/lib -LC:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/lib -LC:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/lib/clang/18/lib/windows -v CMakeFiles/cmTC_7e1bd.dir/CMakeCCompilerABI.c.obj --out-implib libcmTC_7e1bd.dll.a --major-image-version 0 --minor-image-version 0 -lmingw32 C:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/lib/clang/18/lib/windows/libclang_rt.builtins-x86_64.a -lunwind -lmoldname -lmingwex -lmsvcrt -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 C:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/lib/clang/18/lib/windows/libclang_rt.builtins-x86_64.a -lunwind -lmoldname -lmingwex -lmsvcrt -lkernel32 C:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/x86_64-w64-mingw32/lib/crtend.o\x0d]
           arg [C:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/bin/ld.lld] ==> ignore
           arg [-m] ==> ignore
           arg [i386pep] ==> ignore
           arg [-Bdynamic] ==> search dynamic
           arg [-o] ==> ignore
-          arg [cmTC_f1a4d.exe] ==> ignore
+          arg [cmTC_7e1bd.exe] ==> ignore
           arg [C:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/x86_64-w64-mingw32/lib/crt2.o] ==> obj [C:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/x86_64-w64-mingw32/lib/crt2.o]
           arg [C:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/x86_64-w64-mingw32/lib/crtbegin.o] ==> obj [C:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/x86_64-w64-mingw32/lib/crtbegin.o]
           arg [-LC:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/x86_64-w64-mingw32/lib] ==> dir [C:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/x86_64-w64-mingw32/lib]
@@ -164,9 +164,9 @@ events:
           arg [-LC:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/lib] ==> dir [C:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/lib]
           arg [-LC:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/lib/clang/18/lib/windows] ==> dir [C:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/lib/clang/18/lib/windows]
           arg [-v] ==> ignore
-          arg [CMakeFiles/cmTC_f1a4d.dir/CMakeCCompilerABI.c.obj] ==> ignore
+          arg [CMakeFiles/cmTC_7e1bd.dir/CMakeCCompilerABI.c.obj] ==> ignore
           arg [--out-implib] ==> ignore
-          arg [libcmTC_f1a4d.dll.a] ==> ignore
+          arg [libcmTC_7e1bd.dll.a] ==> ignore
           arg [--major-image-version] ==> ignore
           arg [0] ==> ignore
           arg [--minor-image-version] ==> ignore
@@ -223,8 +223,8 @@ events:
     checks:
       - "Detecting CXX compiler ABI info"
     directories:
-      source: "C:/C++/TP/Project/DameCplusplus/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-i694wu"
-      binary: "C:/C++/TP/Project/DameCplusplus/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-i694wu"
+      source: "C:/C++/TP/Project/DameCplusplus/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-7f3ayn"
+      binary: "C:/C++/TP/Project/DameCplusplus/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-7f3ayn"
     cmakeVariables:
       CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "C:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/bin/clang-scan-deps.exe"
       CMAKE_CXX_FLAGS: ""
@@ -235,16 +235,16 @@ events:
       variable: "CMAKE_CXX_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: 'C:/C++/TP/Project/DameCplusplus/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-i694wu'
+        Change Dir: 'C:/C++/TP/Project/DameCplusplus/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-7f3ayn'
         
-        Run Build Command(s): "C:/Program Files/JetBrains/CLion 2024.2.3/bin/ninja/win/x64/ninja.exe" -v cmTC_d342b
-        [1/2] C:\\Compilateurs\\llvm-mingw-20240619-msvcrt-x86_64\\bin\\c++.exe   -fansi-escape-codes -fcolor-diagnostics   -v -MD -MT CMakeFiles/cmTC_d342b.dir/CMakeCXXCompilerABI.cpp.obj -MF CMakeFiles\\cmTC_d342b.dir\\CMakeCXXCompilerABI.cpp.obj.d -o CMakeFiles/cmTC_d342b.dir/CMakeCXXCompilerABI.cpp.obj -c "C:/Program Files/JetBrains/CLion 2024.2.3/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeCXXCompilerABI.cpp"
+        Run Build Command(s): "C:/Program Files/JetBrains/CLion 2024.2.3/bin/ninja/win/x64/ninja.exe" -v cmTC_0b0a4
+        [1/2] C:\\Compilateurs\\llvm-mingw-20240619-msvcrt-x86_64\\bin\\c++.exe   -fansi-escape-codes -fcolor-diagnostics   -v -MD -MT CMakeFiles/cmTC_0b0a4.dir/CMakeCXXCompilerABI.cpp.obj -MF CMakeFiles\\cmTC_0b0a4.dir\\CMakeCXXCompilerABI.cpp.obj.d -o CMakeFiles/cmTC_0b0a4.dir/CMakeCXXCompilerABI.cpp.obj -c "C:/Program Files/JetBrains/CLion 2024.2.3/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeCXXCompilerABI.cpp"
         clang version 18.1.8 (https://github.com/llvm/llvm-project.git 3b5b5c1ec4a3095ab096dd780e84d7ab81f3d7ff)
         Target: x86_64-w64-windows-gnu
         Thread model: posix
         InstalledDir: C:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/bin
          (in-process)
-         "C:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/bin/clang-18.exe" -cc1 -triple x86_64-w64-windows-gnu -emit-obj -mrelax-all -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCXXCompilerABI.cpp -mrelocation-model pic -pic-level 2 -mframe-pointer=none -fmath-errno -ffp-contract=on -fno-rounding-math -mconstructor-aliases -mms-bitfields -funwind-tables=2 -fno-use-init-array -target-cpu x86-64 -tune-cpu generic -debugger-tuning=gdb -fdebug-compilation-dir=C:/C++/TP/Project/DameCplusplus/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-i694wu -v -fcoverage-compilation-dir=C:/C++/TP/Project/DameCplusplus/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-i694wu -resource-dir C:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/lib/clang/18 -dependency-file "CMakeFiles\\\\cmTC_d342b.dir\\\\CMakeCXXCompilerABI.cpp.obj.d" -MT CMakeFiles/cmTC_d342b.dir/CMakeCXXCompilerABI.cpp.obj -sys-header-deps -internal-isystem C:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/x86_64-w64-mingw32/include/c++/v1 -internal-isystem C:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/include/c++/v1 -internal-isystem C:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/lib/clang/18/include -internal-isystem C:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/x86_64-w64-mingw32/include -internal-isystem C:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/x86_64-w64-mingw32/usr/include -internal-isystem C:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/include -fdeprecated-macro -ferror-limit 19 -fno-use-cxa-atexit -fgnuc-version=4.2.1 -fskip-odr-check-in-gmf -fcxx-exceptions -fexceptions -exception-model=seh -fcolor-diagnostics -fansi-escape-codes -faddrsig -o CMakeFiles/cmTC_d342b.dir/CMakeCXXCompilerABI.cpp.obj -x c++ "C:/Program Files/JetBrains/CLion 2024.2.3/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeCXXCompilerABI.cpp"
+         "C:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/bin/clang-18.exe" -cc1 -triple x86_64-w64-windows-gnu -emit-obj -mrelax-all -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCXXCompilerABI.cpp -mrelocation-model pic -pic-level 2 -mframe-pointer=none -fmath-errno -ffp-contract=on -fno-rounding-math -mconstructor-aliases -mms-bitfields -funwind-tables=2 -fno-use-init-array -target-cpu x86-64 -tune-cpu generic -debugger-tuning=gdb -fdebug-compilation-dir=C:/C++/TP/Project/DameCplusplus/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-7f3ayn -v -fcoverage-compilation-dir=C:/C++/TP/Project/DameCplusplus/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-7f3ayn -resource-dir C:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/lib/clang/18 -dependency-file "CMakeFiles\\\\cmTC_0b0a4.dir\\\\CMakeCXXCompilerABI.cpp.obj.d" -MT CMakeFiles/cmTC_0b0a4.dir/CMakeCXXCompilerABI.cpp.obj -sys-header-deps -internal-isystem C:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/x86_64-w64-mingw32/include/c++/v1 -internal-isystem C:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/include/c++/v1 -internal-isystem C:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/lib/clang/18/include -internal-isystem C:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/x86_64-w64-mingw32/include -internal-isystem C:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/x86_64-w64-mingw32/usr/include -internal-isystem C:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/include -fdeprecated-macro -ferror-limit 19 -fno-use-cxa-atexit -fgnuc-version=4.2.1 -fskip-odr-check-in-gmf -fcxx-exceptions -fexceptions -exception-model=seh -fcolor-diagnostics -fansi-escape-codes -faddrsig -o CMakeFiles/cmTC_0b0a4.dir/CMakeCXXCompilerABI.cpp.obj -x c++ "C:/Program Files/JetBrains/CLion 2024.2.3/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeCXXCompilerABI.cpp"
         clang -cc1 version 18.1.8 based upon LLVM 18.1.8 default target x86_64-w64-mingw32
         ignoring nonexistent directory "C:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/x86_64-w64-mingw32/include/c++/v1"
         ignoring nonexistent directory "C:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/x86_64-w64-mingw32/include"
@@ -255,12 +255,12 @@ events:
          C:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/lib/clang/18/include\x0d
          C:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/include\x0d
         End of search list.\x0d
-        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && C:\\Compilateurs\\llvm-mingw-20240619-msvcrt-x86_64\\bin\\c++.exe  -v -Wl,-v CMakeFiles/cmTC_d342b.dir/CMakeCXXCompilerABI.cpp.obj -o cmTC_d342b.exe -Wl,--out-implib,libcmTC_d342b.dll.a -Wl,--major-image-version,0,--minor-image-version,0   && cd ."
+        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && C:\\Compilateurs\\llvm-mingw-20240619-msvcrt-x86_64\\bin\\c++.exe  -v -Wl,-v CMakeFiles/cmTC_0b0a4.dir/CMakeCXXCompilerABI.cpp.obj -o cmTC_0b0a4.exe -Wl,--out-implib,libcmTC_0b0a4.dll.a -Wl,--major-image-version,0,--minor-image-version,0   && cd ."
         clang version 18.1.8 (https://github.com/llvm/llvm-project.git 3b5b5c1ec4a3095ab096dd780e84d7ab81f3d7ff)
         Target: x86_64-w64-windows-gnu
         Thread model: posix
         InstalledDir: C:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/bin
-         "C:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/bin/ld.lld" -m i386pep -Bdynamic -o cmTC_d342b.exe C:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/x86_64-w64-mingw32/lib/crt2.o C:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/x86_64-w64-mingw32/lib/crtbegin.o -LC:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/x86_64-w64-mingw32/lib -LC:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/x86_64-w64-mingw32/mingw/lib -LC:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/lib -LC:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/lib/clang/18/lib/windows -v CMakeFiles/cmTC_d342b.dir/CMakeCXXCompilerABI.cpp.obj --out-implib libcmTC_d342b.dll.a --major-image-version 0 --minor-image-version 0 -lc++ -lmingw32 C:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/lib/clang/18/lib/windows/libclang_rt.builtins-x86_64.a -lunwind -lmoldname -lmingwex -lmsvcrt -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 C:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/lib/clang/18/lib/windows/libclang_rt.builtins-x86_64.a -lunwind -lmoldname -lmingwex -lmsvcrt -lkernel32 C:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/x86_64-w64-mingw32/lib/crtend.o\x0d
+         "C:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/bin/ld.lld" -m i386pep -Bdynamic -o cmTC_0b0a4.exe C:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/x86_64-w64-mingw32/lib/crt2.o C:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/x86_64-w64-mingw32/lib/crtbegin.o -LC:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/x86_64-w64-mingw32/lib -LC:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/x86_64-w64-mingw32/mingw/lib -LC:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/lib -LC:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/lib/clang/18/lib/windows -v CMakeFiles/cmTC_0b0a4.dir/CMakeCXXCompilerABI.cpp.obj --out-implib libcmTC_0b0a4.dll.a --major-image-version 0 --minor-image-version 0 -lc++ -lmingw32 C:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/lib/clang/18/lib/windows/libclang_rt.builtins-x86_64.a -lunwind -lmoldname -lmingwex -lmsvcrt -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 C:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/lib/clang/18/lib/windows/libclang_rt.builtins-x86_64.a -lunwind -lmoldname -lmingwex -lmsvcrt -lkernel32 C:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/x86_64-w64-mingw32/lib/crtend.o\x0d
         LLD 18.1.8 (compatible with GNU linkers)
         
       exitCode: 0
@@ -294,16 +294,16 @@ events:
       Parsed CXX implicit link information:
         link line regex: [^( *|.*[/\\])(ld[0-9]*(\\.[a-z]+)?|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
         linker tool regex: [^[ 	]*(->|")?[ 	]*(([^"]*[/\\])?(ld[0-9]*(\\.[a-z]+)?))("|,| |$)]
-        ignore line: [Change Dir: 'C:/C++/TP/Project/DameCplusplus/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-i694wu']
+        ignore line: [Change Dir: 'C:/C++/TP/Project/DameCplusplus/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-7f3ayn']
         ignore line: []
-        ignore line: [Run Build Command(s): "C:/Program Files/JetBrains/CLion 2024.2.3/bin/ninja/win/x64/ninja.exe" -v cmTC_d342b]
-        ignore line: [[1/2] C:\\Compilateurs\\llvm-mingw-20240619-msvcrt-x86_64\\bin\\c++.exe   -fansi-escape-codes -fcolor-diagnostics   -v -MD -MT CMakeFiles/cmTC_d342b.dir/CMakeCXXCompilerABI.cpp.obj -MF CMakeFiles\\cmTC_d342b.dir\\CMakeCXXCompilerABI.cpp.obj.d -o CMakeFiles/cmTC_d342b.dir/CMakeCXXCompilerABI.cpp.obj -c "C:/Program Files/JetBrains/CLion 2024.2.3/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeCXXCompilerABI.cpp"]
+        ignore line: [Run Build Command(s): "C:/Program Files/JetBrains/CLion 2024.2.3/bin/ninja/win/x64/ninja.exe" -v cmTC_0b0a4]
+        ignore line: [[1/2] C:\\Compilateurs\\llvm-mingw-20240619-msvcrt-x86_64\\bin\\c++.exe   -fansi-escape-codes -fcolor-diagnostics   -v -MD -MT CMakeFiles/cmTC_0b0a4.dir/CMakeCXXCompilerABI.cpp.obj -MF CMakeFiles\\cmTC_0b0a4.dir\\CMakeCXXCompilerABI.cpp.obj.d -o CMakeFiles/cmTC_0b0a4.dir/CMakeCXXCompilerABI.cpp.obj -c "C:/Program Files/JetBrains/CLion 2024.2.3/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeCXXCompilerABI.cpp"]
         ignore line: [clang version 18.1.8 (https://github.com/llvm/llvm-project.git 3b5b5c1ec4a3095ab096dd780e84d7ab81f3d7ff)]
         ignore line: [Target: x86_64-w64-windows-gnu]
         ignore line: [Thread model: posix]
         ignore line: [InstalledDir: C:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/bin]
         ignore line: [ (in-process)]
-        ignore line: [ "C:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/bin/clang-18.exe" -cc1 -triple x86_64-w64-windows-gnu -emit-obj -mrelax-all -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCXXCompilerABI.cpp -mrelocation-model pic -pic-level 2 -mframe-pointer=none -fmath-errno -ffp-contract=on -fno-rounding-math -mconstructor-aliases -mms-bitfields -funwind-tables=2 -fno-use-init-array -target-cpu x86-64 -tune-cpu generic -debugger-tuning=gdb -fdebug-compilation-dir=C:/C++/TP/Project/DameCplusplus/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-i694wu -v -fcoverage-compilation-dir=C:/C++/TP/Project/DameCplusplus/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-i694wu -resource-dir C:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/lib/clang/18 -dependency-file "CMakeFiles\\\\cmTC_d342b.dir\\\\CMakeCXXCompilerABI.cpp.obj.d" -MT CMakeFiles/cmTC_d342b.dir/CMakeCXXCompilerABI.cpp.obj -sys-header-deps -internal-isystem C:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/x86_64-w64-mingw32/include/c++/v1 -internal-isystem C:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/include/c++/v1 -internal-isystem C:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/lib/clang/18/include -internal-isystem C:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/x86_64-w64-mingw32/include -internal-isystem C:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/x86_64-w64-mingw32/usr/include -internal-isystem C:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/include -fdeprecated-macro -ferror-limit 19 -fno-use-cxa-atexit -fgnuc-version=4.2.1 -fskip-odr-check-in-gmf -fcxx-exceptions -fexceptions -exception-model=seh -fcolor-diagnostics -fansi-escape-codes -faddrsig -o CMakeFiles/cmTC_d342b.dir/CMakeCXXCompilerABI.cpp.obj -x c++ "C:/Program Files/JetBrains/CLion 2024.2.3/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeCXXCompilerABI.cpp"]
+        ignore line: [ "C:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/bin/clang-18.exe" -cc1 -triple x86_64-w64-windows-gnu -emit-obj -mrelax-all -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCXXCompilerABI.cpp -mrelocation-model pic -pic-level 2 -mframe-pointer=none -fmath-errno -ffp-contract=on -fno-rounding-math -mconstructor-aliases -mms-bitfields -funwind-tables=2 -fno-use-init-array -target-cpu x86-64 -tune-cpu generic -debugger-tuning=gdb -fdebug-compilation-dir=C:/C++/TP/Project/DameCplusplus/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-7f3ayn -v -fcoverage-compilation-dir=C:/C++/TP/Project/DameCplusplus/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-7f3ayn -resource-dir C:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/lib/clang/18 -dependency-file "CMakeFiles\\\\cmTC_0b0a4.dir\\\\CMakeCXXCompilerABI.cpp.obj.d" -MT CMakeFiles/cmTC_0b0a4.dir/CMakeCXXCompilerABI.cpp.obj -sys-header-deps -internal-isystem C:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/x86_64-w64-mingw32/include/c++/v1 -internal-isystem C:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/include/c++/v1 -internal-isystem C:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/lib/clang/18/include -internal-isystem C:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/x86_64-w64-mingw32/include -internal-isystem C:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/x86_64-w64-mingw32/usr/include -internal-isystem C:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/include -fdeprecated-macro -ferror-limit 19 -fno-use-cxa-atexit -fgnuc-version=4.2.1 -fskip-odr-check-in-gmf -fcxx-exceptions -fexceptions -exception-model=seh -fcolor-diagnostics -fansi-escape-codes -faddrsig -o CMakeFiles/cmTC_0b0a4.dir/CMakeCXXCompilerABI.cpp.obj -x c++ "C:/Program Files/JetBrains/CLion 2024.2.3/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeCXXCompilerABI.cpp"]
         ignore line: [clang -cc1 version 18.1.8 based upon LLVM 18.1.8 default target x86_64-w64-mingw32]
         ignore line: [ignoring nonexistent directory "C:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/x86_64-w64-mingw32/include/c++/v1"]
         ignore line: [ignoring nonexistent directory "C:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/x86_64-w64-mingw32/include"]
@@ -314,18 +314,18 @@ events:
         ignore line: [ C:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/lib/clang/18/include\x0d]
         ignore line: [ C:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/include\x0d]
         ignore line: [End of search list.\x0d]
-        ignore line: [[2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && C:\\Compilateurs\\llvm-mingw-20240619-msvcrt-x86_64\\bin\\c++.exe  -v -Wl -v CMakeFiles/cmTC_d342b.dir/CMakeCXXCompilerABI.cpp.obj -o cmTC_d342b.exe -Wl --out-implib libcmTC_d342b.dll.a -Wl --major-image-version 0 --minor-image-version 0   && cd ."]
+        ignore line: [[2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && C:\\Compilateurs\\llvm-mingw-20240619-msvcrt-x86_64\\bin\\c++.exe  -v -Wl -v CMakeFiles/cmTC_0b0a4.dir/CMakeCXXCompilerABI.cpp.obj -o cmTC_0b0a4.exe -Wl --out-implib libcmTC_0b0a4.dll.a -Wl --major-image-version 0 --minor-image-version 0   && cd ."]
         ignore line: [clang version 18.1.8 (https://github.com/llvm/llvm-project.git 3b5b5c1ec4a3095ab096dd780e84d7ab81f3d7ff)]
         ignore line: [Target: x86_64-w64-windows-gnu]
         ignore line: [Thread model: posix]
         ignore line: [InstalledDir: C:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/bin]
-        link line: [ "C:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/bin/ld.lld" -m i386pep -Bdynamic -o cmTC_d342b.exe C:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/x86_64-w64-mingw32/lib/crt2.o C:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/x86_64-w64-mingw32/lib/crtbegin.o -LC:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/x86_64-w64-mingw32/lib -LC:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/x86_64-w64-mingw32/mingw/lib -LC:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/lib -LC:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/lib/clang/18/lib/windows -v CMakeFiles/cmTC_d342b.dir/CMakeCXXCompilerABI.cpp.obj --out-implib libcmTC_d342b.dll.a --major-image-version 0 --minor-image-version 0 -lc++ -lmingw32 C:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/lib/clang/18/lib/windows/libclang_rt.builtins-x86_64.a -lunwind -lmoldname -lmingwex -lmsvcrt -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 C:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/lib/clang/18/lib/windows/libclang_rt.builtins-x86_64.a -lunwind -lmoldname -lmingwex -lmsvcrt -lkernel32 C:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/x86_64-w64-mingw32/lib/crtend.o\x0d]
+        link line: [ "C:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/bin/ld.lld" -m i386pep -Bdynamic -o cmTC_0b0a4.exe C:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/x86_64-w64-mingw32/lib/crt2.o C:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/x86_64-w64-mingw32/lib/crtbegin.o -LC:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/x86_64-w64-mingw32/lib -LC:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/x86_64-w64-mingw32/mingw/lib -LC:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/lib -LC:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/lib/clang/18/lib/windows -v CMakeFiles/cmTC_0b0a4.dir/CMakeCXXCompilerABI.cpp.obj --out-implib libcmTC_0b0a4.dll.a --major-image-version 0 --minor-image-version 0 -lc++ -lmingw32 C:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/lib/clang/18/lib/windows/libclang_rt.builtins-x86_64.a -lunwind -lmoldname -lmingwex -lmsvcrt -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 C:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/lib/clang/18/lib/windows/libclang_rt.builtins-x86_64.a -lunwind -lmoldname -lmingwex -lmsvcrt -lkernel32 C:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/x86_64-w64-mingw32/lib/crtend.o\x0d]
           arg [C:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/bin/ld.lld] ==> ignore
           arg [-m] ==> ignore
           arg [i386pep] ==> ignore
           arg [-Bdynamic] ==> search dynamic
           arg [-o] ==> ignore
-          arg [cmTC_d342b.exe] ==> ignore
+          arg [cmTC_0b0a4.exe] ==> ignore
           arg [C:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/x86_64-w64-mingw32/lib/crt2.o] ==> obj [C:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/x86_64-w64-mingw32/lib/crt2.o]
           arg [C:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/x86_64-w64-mingw32/lib/crtbegin.o] ==> obj [C:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/x86_64-w64-mingw32/lib/crtbegin.o]
           arg [-LC:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/x86_64-w64-mingw32/lib] ==> dir [C:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/x86_64-w64-mingw32/lib]
@@ -333,9 +333,9 @@ events:
           arg [-LC:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/lib] ==> dir [C:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/lib]
           arg [-LC:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/lib/clang/18/lib/windows] ==> dir [C:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/lib/clang/18/lib/windows]
           arg [-v] ==> ignore
-          arg [CMakeFiles/cmTC_d342b.dir/CMakeCXXCompilerABI.cpp.obj] ==> ignore
+          arg [CMakeFiles/cmTC_0b0a4.dir/CMakeCXXCompilerABI.cpp.obj] ==> ignore
           arg [--out-implib] ==> ignore
-          arg [libcmTC_d342b.dll.a] ==> ignore
+          arg [libcmTC_0b0a4.dll.a] ==> ignore
           arg [--major-image-version] ==> ignore
           arg [0] ==> ignore
           arg [--minor-image-version] ==> ignore
@@ -394,8 +394,8 @@ events:
     checks:
       - "Looking for sys/types.h"
     directories:
-      source: "C:/C++/TP/Project/DameCplusplus/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-v1vk7t"
-      binary: "C:/C++/TP/Project/DameCplusplus/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-v1vk7t"
+      source: "C:/C++/TP/Project/DameCplusplus/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-82cyuq"
+      binary: "C:/C++/TP/Project/DameCplusplus/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-82cyuq"
     cmakeVariables:
       CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "C:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/bin/clang-scan-deps.exe"
       CMAKE_C_FLAGS: ""
@@ -407,11 +407,11 @@ events:
       variable: "HAVE_SYS_TYPES_H"
       cached: true
       stdout: |
-        Change Dir: 'C:/C++/TP/Project/DameCplusplus/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-v1vk7t'
+        Change Dir: 'C:/C++/TP/Project/DameCplusplus/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-82cyuq'
         
-        Run Build Command(s): "C:/Program Files/JetBrains/CLion 2024.2.3/bin/ninja/win/x64/ninja.exe" -v cmTC_69678
-        [1/2] C:\\Compilateurs\\llvm-mingw-20240619-msvcrt-x86_64\\bin\\cc.exe   -fansi-escape-codes -fcolor-diagnostics -MD -MT CMakeFiles/cmTC_69678.dir/CheckIncludeFile.c.obj -MF CMakeFiles\\cmTC_69678.dir\\CheckIncludeFile.c.obj.d -o CMakeFiles/cmTC_69678.dir/CheckIncludeFile.c.obj -c C:/C++/TP/Project/DameCplusplus/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-v1vk7t/CheckIncludeFile.c
-        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && C:\\Compilateurs\\llvm-mingw-20240619-msvcrt-x86_64\\bin\\cc.exe   CMakeFiles/cmTC_69678.dir/CheckIncludeFile.c.obj -o cmTC_69678.exe -Wl,--out-implib,libcmTC_69678.dll.a -Wl,--major-image-version,0,--minor-image-version,0  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 && cd ."
+        Run Build Command(s): "C:/Program Files/JetBrains/CLion 2024.2.3/bin/ninja/win/x64/ninja.exe" -v cmTC_7cd4d
+        [1/2] C:\\Compilateurs\\llvm-mingw-20240619-msvcrt-x86_64\\bin\\cc.exe   -fansi-escape-codes -fcolor-diagnostics -MD -MT CMakeFiles/cmTC_7cd4d.dir/CheckIncludeFile.c.obj -MF CMakeFiles\\cmTC_7cd4d.dir\\CheckIncludeFile.c.obj.d -o CMakeFiles/cmTC_7cd4d.dir/CheckIncludeFile.c.obj -c C:/C++/TP/Project/DameCplusplus/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-82cyuq/CheckIncludeFile.c
+        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && C:\\Compilateurs\\llvm-mingw-20240619-msvcrt-x86_64\\bin\\cc.exe   CMakeFiles/cmTC_7cd4d.dir/CheckIncludeFile.c.obj -o cmTC_7cd4d.exe -Wl,--out-implib,libcmTC_7cd4d.dll.a -Wl,--major-image-version,0,--minor-image-version,0  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 && cd ."
         
       exitCode: 0
   -
@@ -424,8 +424,8 @@ events:
     checks:
       - "Looking for stdint.h"
     directories:
-      source: "C:/C++/TP/Project/DameCplusplus/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-9ui4e3"
-      binary: "C:/C++/TP/Project/DameCplusplus/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-9ui4e3"
+      source: "C:/C++/TP/Project/DameCplusplus/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-4zf7al"
+      binary: "C:/C++/TP/Project/DameCplusplus/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-4zf7al"
     cmakeVariables:
       CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "C:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/bin/clang-scan-deps.exe"
       CMAKE_C_FLAGS: ""
@@ -437,11 +437,11 @@ events:
       variable: "HAVE_STDINT_H"
       cached: true
       stdout: |
-        Change Dir: 'C:/C++/TP/Project/DameCplusplus/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-9ui4e3'
+        Change Dir: 'C:/C++/TP/Project/DameCplusplus/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-4zf7al'
         
-        Run Build Command(s): "C:/Program Files/JetBrains/CLion 2024.2.3/bin/ninja/win/x64/ninja.exe" -v cmTC_a08a6
-        [1/2] C:\\Compilateurs\\llvm-mingw-20240619-msvcrt-x86_64\\bin\\cc.exe   -fansi-escape-codes -fcolor-diagnostics -MD -MT CMakeFiles/cmTC_a08a6.dir/CheckIncludeFile.c.obj -MF CMakeFiles\\cmTC_a08a6.dir\\CheckIncludeFile.c.obj.d -o CMakeFiles/cmTC_a08a6.dir/CheckIncludeFile.c.obj -c C:/C++/TP/Project/DameCplusplus/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-9ui4e3/CheckIncludeFile.c
-        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && C:\\Compilateurs\\llvm-mingw-20240619-msvcrt-x86_64\\bin\\cc.exe   CMakeFiles/cmTC_a08a6.dir/CheckIncludeFile.c.obj -o cmTC_a08a6.exe -Wl,--out-implib,libcmTC_a08a6.dll.a -Wl,--major-image-version,0,--minor-image-version,0  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 && cd ."
+        Run Build Command(s): "C:/Program Files/JetBrains/CLion 2024.2.3/bin/ninja/win/x64/ninja.exe" -v cmTC_c99c4
+        [1/2] C:\\Compilateurs\\llvm-mingw-20240619-msvcrt-x86_64\\bin\\cc.exe   -fansi-escape-codes -fcolor-diagnostics -MD -MT CMakeFiles/cmTC_c99c4.dir/CheckIncludeFile.c.obj -MF CMakeFiles\\cmTC_c99c4.dir\\CheckIncludeFile.c.obj.d -o CMakeFiles/cmTC_c99c4.dir/CheckIncludeFile.c.obj -c C:/C++/TP/Project/DameCplusplus/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-4zf7al/CheckIncludeFile.c
+        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && C:\\Compilateurs\\llvm-mingw-20240619-msvcrt-x86_64\\bin\\cc.exe   CMakeFiles/cmTC_c99c4.dir/CheckIncludeFile.c.obj -o cmTC_c99c4.exe -Wl,--out-implib,libcmTC_c99c4.dll.a -Wl,--major-image-version,0,--minor-image-version,0  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 && cd ."
         
       exitCode: 0
   -
@@ -454,8 +454,8 @@ events:
     checks:
       - "Looking for stddef.h"
     directories:
-      source: "C:/C++/TP/Project/DameCplusplus/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-ges6v5"
-      binary: "C:/C++/TP/Project/DameCplusplus/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-ges6v5"
+      source: "C:/C++/TP/Project/DameCplusplus/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-ubkms1"
+      binary: "C:/C++/TP/Project/DameCplusplus/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-ubkms1"
     cmakeVariables:
       CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "C:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/bin/clang-scan-deps.exe"
       CMAKE_C_FLAGS: ""
@@ -467,11 +467,11 @@ events:
       variable: "HAVE_STDDEF_H"
       cached: true
       stdout: |
-        Change Dir: 'C:/C++/TP/Project/DameCplusplus/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-ges6v5'
+        Change Dir: 'C:/C++/TP/Project/DameCplusplus/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-ubkms1'
         
-        Run Build Command(s): "C:/Program Files/JetBrains/CLion 2024.2.3/bin/ninja/win/x64/ninja.exe" -v cmTC_341b1
-        [1/2] C:\\Compilateurs\\llvm-mingw-20240619-msvcrt-x86_64\\bin\\cc.exe   -fansi-escape-codes -fcolor-diagnostics -MD -MT CMakeFiles/cmTC_341b1.dir/CheckIncludeFile.c.obj -MF CMakeFiles\\cmTC_341b1.dir\\CheckIncludeFile.c.obj.d -o CMakeFiles/cmTC_341b1.dir/CheckIncludeFile.c.obj -c C:/C++/TP/Project/DameCplusplus/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-ges6v5/CheckIncludeFile.c
-        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && C:\\Compilateurs\\llvm-mingw-20240619-msvcrt-x86_64\\bin\\cc.exe   CMakeFiles/cmTC_341b1.dir/CheckIncludeFile.c.obj -o cmTC_341b1.exe -Wl,--out-implib,libcmTC_341b1.dll.a -Wl,--major-image-version,0,--minor-image-version,0  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 && cd ."
+        Run Build Command(s): "C:/Program Files/JetBrains/CLion 2024.2.3/bin/ninja/win/x64/ninja.exe" -v cmTC_5b097
+        [1/2] C:\\Compilateurs\\llvm-mingw-20240619-msvcrt-x86_64\\bin\\cc.exe   -fansi-escape-codes -fcolor-diagnostics -MD -MT CMakeFiles/cmTC_5b097.dir/CheckIncludeFile.c.obj -MF CMakeFiles\\cmTC_5b097.dir\\CheckIncludeFile.c.obj.d -o CMakeFiles/cmTC_5b097.dir/CheckIncludeFile.c.obj -c C:/C++/TP/Project/DameCplusplus/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-ubkms1/CheckIncludeFile.c
+        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && C:\\Compilateurs\\llvm-mingw-20240619-msvcrt-x86_64\\bin\\cc.exe   CMakeFiles/cmTC_5b097.dir/CheckIncludeFile.c.obj -o cmTC_5b097.exe -Wl,--out-implib,libcmTC_5b097.dll.a -Wl,--major-image-version,0,--minor-image-version,0  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 && cd ."
         
       exitCode: 0
   -
@@ -484,8 +484,8 @@ events:
     checks:
       - "Check size of void*"
     directories:
-      source: "C:/C++/TP/Project/DameCplusplus/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-znpvvu"
-      binary: "C:/C++/TP/Project/DameCplusplus/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-znpvvu"
+      source: "C:/C++/TP/Project/DameCplusplus/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-ys72m6"
+      binary: "C:/C++/TP/Project/DameCplusplus/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-ys72m6"
     cmakeVariables:
       CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "C:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/bin/clang-scan-deps.exe"
       CMAKE_C_FLAGS: ""
@@ -497,11 +497,11 @@ events:
       variable: "HAVE_SIZEOF_VOID_PTR"
       cached: true
       stdout: |
-        Change Dir: 'C:/C++/TP/Project/DameCplusplus/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-znpvvu'
+        Change Dir: 'C:/C++/TP/Project/DameCplusplus/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-ys72m6'
         
-        Run Build Command(s): "C:/Program Files/JetBrains/CLion 2024.2.3/bin/ninja/win/x64/ninja.exe" -v cmTC_dc349
-        [1/2] C:\\Compilateurs\\llvm-mingw-20240619-msvcrt-x86_64\\bin\\cc.exe   -fansi-escape-codes -fcolor-diagnostics -MD -MT CMakeFiles/cmTC_dc349.dir/SIZEOF_VOID_PTR.c.obj -MF CMakeFiles\\cmTC_dc349.dir\\SIZEOF_VOID_PTR.c.obj.d -o CMakeFiles/cmTC_dc349.dir/SIZEOF_VOID_PTR.c.obj -c C:/C++/TP/Project/DameCplusplus/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-znpvvu/SIZEOF_VOID_PTR.c
-        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && C:\\Compilateurs\\llvm-mingw-20240619-msvcrt-x86_64\\bin\\cc.exe   CMakeFiles/cmTC_dc349.dir/SIZEOF_VOID_PTR.c.obj -o cmTC_dc349.exe -Wl,--out-implib,libcmTC_dc349.dll.a -Wl,--major-image-version,0,--minor-image-version,0  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 && cd ."
+        Run Build Command(s): "C:/Program Files/JetBrains/CLion 2024.2.3/bin/ninja/win/x64/ninja.exe" -v cmTC_c9e10
+        [1/2] C:\\Compilateurs\\llvm-mingw-20240619-msvcrt-x86_64\\bin\\cc.exe   -fansi-escape-codes -fcolor-diagnostics -MD -MT CMakeFiles/cmTC_c9e10.dir/SIZEOF_VOID_PTR.c.obj -MF CMakeFiles\\cmTC_c9e10.dir\\SIZEOF_VOID_PTR.c.obj.d -o CMakeFiles/cmTC_c9e10.dir/SIZEOF_VOID_PTR.c.obj -c C:/C++/TP/Project/DameCplusplus/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-ys72m6/SIZEOF_VOID_PTR.c
+        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && C:\\Compilateurs\\llvm-mingw-20240619-msvcrt-x86_64\\bin\\cc.exe   CMakeFiles/cmTC_c9e10.dir/SIZEOF_VOID_PTR.c.obj -o cmTC_c9e10.exe -Wl,--out-implib,libcmTC_c9e10.dll.a -Wl,--major-image-version,0,--minor-image-version,0  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 && cd ."
         
       exitCode: 0
   -
@@ -512,8 +512,8 @@ events:
     checks:
       - "Looking for dinput.h"
     directories:
-      source: "C:/C++/TP/Project/DameCplusplus/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-85cy9m"
-      binary: "C:/C++/TP/Project/DameCplusplus/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-85cy9m"
+      source: "C:/C++/TP/Project/DameCplusplus/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-0okn6x"
+      binary: "C:/C++/TP/Project/DameCplusplus/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-0okn6x"
     cmakeVariables:
       CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "C:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/bin/clang-scan-deps.exe"
       CMAKE_C_FLAGS: ""
@@ -526,11 +526,11 @@ events:
       variable: "DINPUT_H_FOUND"
       cached: true
       stdout: |
-        Change Dir: 'C:/C++/TP/Project/DameCplusplus/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-85cy9m'
+        Change Dir: 'C:/C++/TP/Project/DameCplusplus/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-0okn6x'
         
-        Run Build Command(s): "C:/Program Files/JetBrains/CLion 2024.2.3/bin/ninja/win/x64/ninja.exe" -v cmTC_1c8df
-        [1/2] C:\\Compilateurs\\llvm-mingw-20240619-msvcrt-x86_64\\bin\\cc.exe   -fansi-escape-codes -fcolor-diagnostics -MD -MT CMakeFiles/cmTC_1c8df.dir/CheckIncludeFile.c.obj -MF CMakeFiles\\cmTC_1c8df.dir\\CheckIncludeFile.c.obj.d -o CMakeFiles/cmTC_1c8df.dir/CheckIncludeFile.c.obj -c C:/C++/TP/Project/DameCplusplus/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-85cy9m/CheckIncludeFile.c
-        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && C:\\Compilateurs\\llvm-mingw-20240619-msvcrt-x86_64\\bin\\cc.exe   CMakeFiles/cmTC_1c8df.dir/CheckIncludeFile.c.obj -o cmTC_1c8df.exe -Wl,--out-implib,libcmTC_1c8df.dll.a -Wl,--major-image-version,0,--minor-image-version,0  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 && cd ."
+        Run Build Command(s): "C:/Program Files/JetBrains/CLion 2024.2.3/bin/ninja/win/x64/ninja.exe" -v cmTC_e8a5f
+        [1/2] C:\\Compilateurs\\llvm-mingw-20240619-msvcrt-x86_64\\bin\\cc.exe   -fansi-escape-codes -fcolor-diagnostics -MD -MT CMakeFiles/cmTC_e8a5f.dir/CheckIncludeFile.c.obj -MF CMakeFiles\\cmTC_e8a5f.dir\\CheckIncludeFile.c.obj.d -o CMakeFiles/cmTC_e8a5f.dir/CheckIncludeFile.c.obj -c C:/C++/TP/Project/DameCplusplus/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-0okn6x/CheckIncludeFile.c
+        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && C:\\Compilateurs\\llvm-mingw-20240619-msvcrt-x86_64\\bin\\cc.exe   CMakeFiles/cmTC_e8a5f.dir/CheckIncludeFile.c.obj -o cmTC_e8a5f.exe -Wl,--out-implib,libcmTC_e8a5f.dll.a -Wl,--major-image-version,0,--minor-image-version,0  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 && cd ."
         
       exitCode: 0
 ...

@@ -21,6 +21,11 @@
 			"bmi" : "C:/C++/TP/Project/DameCplusplus/cmake-build-debug/CMakeFiles/main.dir/position.pcm",
 			"is-private" : false
 		},
+		"soundManager" : 
+		{
+			"bmi" : "C:/C++/TP/Project/DameCplusplus/cmake-build-debug/CMakeFiles/main.dir/soundManager.pcm",
+			"is-private" : false
+		},
 		"windowManager" : 
 		{
 			"bmi" : "C:/C++/TP/Project/DameCplusplus/cmake-build-debug/CMakeFiles/main.dir/windowManager.pcm",
@@ -49,6 +54,11 @@
 			"lookup-method" : "by-name",
 			"path" : "CMakeFiles/main.dir/position.pcm"
 		},
+		"soundManager" : 
+		{
+			"lookup-method" : "by-name",
+			"path" : "CMakeFiles/main.dir/soundManager.pcm"
+		},
 		"windowManager" : 
 		{
 			"lookup-method" : "by-name",
@@ -60,13 +70,15 @@
 		"board" : 
 		[
 			"piece",
-			"position"
+			"position",
+			"soundManager"
 		],
 		"game" : 
 		[
 			"board",
 			"piece",
-			"position"
+			"position",
+			"soundManager"
 		]
 	}
 }

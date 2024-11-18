@@ -11,6 +11,9 @@
           "logical-name": "position"
         },
         {
+          "logical-name": "soundManager"
+        },
+        {
           "logical-name": "board"
         }
       ]

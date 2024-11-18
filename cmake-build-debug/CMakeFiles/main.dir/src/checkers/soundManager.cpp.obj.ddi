@@ -1,0 +1,14 @@
+{
+  "revision": 0,
+  "rules": [
+    {
+      "primary-output": "CMakeFiles\\main.dir\\src\\checkers\\soundManager.cpp.obj",
+      "requires": [
+        {
+          "logical-name": "soundManager"
+        }
+      ]
+    }
+  ],
+  "version": 1
+}

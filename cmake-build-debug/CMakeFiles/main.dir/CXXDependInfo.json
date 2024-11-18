@@ -46,6 +46,16 @@
 			"type" : "CXX_MODULES",
 			"visibility" : "PUBLIC"
 		},
+		"CMakeFiles/main.dir/src/checkers/modules/soundManager.cppm.obj" : 
+		{
+			"bmi-only" : false,
+			"destination" : null,
+			"name" : "CXX_MODULES",
+			"relative-directory" : "src/checkers/modules",
+			"source" : "C:/C++/TP/Project/DameCplusplus/src/checkers/modules/soundManager.cppm",
+			"type" : "CXX_MODULES",
+			"visibility" : "PUBLIC"
+		},
 		"CMakeFiles/main.dir/src/checkers/modules/windowManager.cppm.obj" : 
 		{
 			"bmi-only" : false,
