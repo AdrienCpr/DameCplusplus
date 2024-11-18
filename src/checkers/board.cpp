@@ -8,7 +8,7 @@ import piece;
 import position;
 
 namespace board {
-    GameBoard::GameBoard() : grid(size) {
+    GameBoard::GameBoard() : grid(size), currentPlayer(PieceColor::White) {
         for (auto& row : grid) {
             row.resize(size);
         }
@@ -63,67 +63,65 @@ namespace board {
             return false;
         }
 
-        int rowDiff = to.row - from.row;
+        int rowDiff = std::abs(to.row - from.row);
         int colDiff = std::abs(to.col - from.col);
 
-        auto& piece = grid[from.row][from.col];
-        if (!piece) return false;
+        auto piece = grid[from.row][from.col].get();
 
-        if (dynamic_cast<piece::King*>(piece.get())) {
-            return std::abs(rowDiff) == 1 && colDiff == 1;
+        if (dynamic_cast<piece::King*>(piece)) {
+            return (rowDiff == colDiff && rowDiff > 0);
+        } else {
+            return (rowDiff == 1 && colDiff == 1);
         }
-
-        if (piece->color == PieceColor::White && rowDiff != -1) {
-            return false;
-        }
-        if (piece->color == PieceColor::Black && rowDiff != 1) {
-            return false;
-        }
-
-        return colDiff == 1;
     }
+
 
     bool GameBoard::isValidCapture(const position::Position& from, const position::Position& to) const {
         if (!to.isValid() || grid[to.row][to.col]) {
             return false;
         }
 
-        int rowDiff = to.row - from.row;
+        int rowDiff = std::abs(to.row - from.row);
         int colDiff = std::abs(to.col - from.col);
 
-        auto& piece = grid[from.row][from.col];
-        if (!piece) return false;
+        auto piece = grid[from.row][from.col].get();
 
-        if (dynamic_cast<piece::King*>(piece.get())) {
-            return std::abs(rowDiff) == 2 && colDiff == 2;
+        if (dynamic_cast<piece::King*>(piece)) {
+            if (rowDiff > 2 && colDiff > 2) {
+                int midRow = (from.row + to.row) / 2;
+                int midCol = (from.col + to.col) / 2;
+
+                if (grid[midRow][midCol] && grid[midRow][midCol]->color != piece->color) {
+                    return true;
+                }
+            }
+        } else {
+            if (rowDiff == 2 && colDiff == 2) {
+                int midRow = (from.row + to.row) / 2;
+                int midCol = (from.col + to.col) / 2;
+                if (grid[midRow][midCol] && grid[midRow][midCol]->color != piece->color) {
+                    return true;
+                }
+            }
         }
 
-        if (piece->color == PieceColor::White && rowDiff != -2) {
-            return false;
-        }
-        if (piece->color == PieceColor::Black && rowDiff != 2) {
-            return false;
-        }
-
-        int midRow = (from.row + to.row) / 2;
-        int midCol = (from.col + to.col) / 2;
-        if (!grid[midRow][midCol] || grid[midRow][midCol]->color == piece->color) {
-            return false;
-        }
-
-        return colDiff == 2;
+        return false;
     }
 
+
     bool GameBoard::movePiece(const position::Position& from, const position::Position& to) {
-        if (isValidMove(from, to)) {
-            grid[to.row][to.col] = std::move(grid[from.row][from.col]);
-            grid[from.row][from.col].reset();
+        if (grid[from.row][from.col] && grid[from.row][from.col]->color == currentPlayer) {
+            if (isValidMove(from, to)) {
+                grid[to.row][to.col] = std::move(grid[from.row][from.col]);
+                grid[from.row][from.col].reset();
 
-            if (to.row == 0 || to.row == size - 1) {
-                promoteToKing(to);
+                if (to.row == 0 || to.row == size - 1) {
+                    promoteToKing(to);
+                }
+
+                currentPlayer = (currentPlayer == PieceColor::White) ? PieceColor::Black : PieceColor::White;
+                return true;
             }
-
-            return true;
         }
         return false;
     }

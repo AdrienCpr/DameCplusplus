@@ -29,5 +29,6 @@ export namespace board {
 
     private:
         std::vector<std::vector<std::unique_ptr<piece::Piece>>> grid;
+        PieceColor currentPlayer;
     };
 }
