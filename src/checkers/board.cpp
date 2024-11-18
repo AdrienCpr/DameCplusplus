@@ -57,49 +57,68 @@ namespace board {
             }
         }
     }
-        // Méthode pour vérifier si un mouvement est valide
+
     bool GameBoard::isValidMove(const position::Position& from, const position::Position& to) const {
         if (!to.isValid() || grid[to.row][to.col]) {
-            return false; // La case cible doit être valide et vide
+            return false;
         }
 
-        // Déplacement simple d'une case en diagonale
-        int rowDiff = std::abs(to.row - from.row);
+        int rowDiff = to.row - from.row;
         int colDiff = std::abs(to.col - from.col);
-        return rowDiff == 1 && colDiff == 1; // Déplacement d'une case en diagonale
+
+        auto& piece = grid[from.row][from.col];
+        if (!piece) return false;
+
+        if (dynamic_cast<piece::King*>(piece.get())) {
+            return std::abs(rowDiff) == 1 && colDiff == 1;
+        }
+
+        if (piece->color == PieceColor::White && rowDiff != -1) {
+            return false;
+        }
+        if (piece->color == PieceColor::Black && rowDiff != 1) {
+            return false;
+        }
+
+        return colDiff == 1;
     }
 
-    // Méthode pour vérifier si une capture est valide
     bool GameBoard::isValidCapture(const position::Position& from, const position::Position& to) const {
         if (!to.isValid() || grid[to.row][to.col]) {
-            return false; // La case cible doit être valide et vide
+            return false;
         }
 
-        // Vérification si la capture est en diagonale de 2 cases
-        int rowDiff = std::abs(to.row - from.row);
+        int rowDiff = to.row - from.row;
         int colDiff = std::abs(to.col - from.col);
-        if (rowDiff != 2 || colDiff != 2) {
-            return false; // La capture doit sauter une pièce
+
+        auto& piece = grid[from.row][from.col];
+        if (!piece) return false;
+
+        if (dynamic_cast<piece::King*>(piece.get())) {
+            return std::abs(rowDiff) == 2 && colDiff == 2;
         }
 
-        // Vérification qu'il y a une pièce adverse entre les deux cases
+        if (piece->color == PieceColor::White && rowDiff != -2) {
+            return false;
+        }
+        if (piece->color == PieceColor::Black && rowDiff != 2) {
+            return false;
+        }
+
         int midRow = (from.row + to.row) / 2;
         int midCol = (from.col + to.col) / 2;
-        if (!grid[midRow][midCol] || grid[midRow][midCol]->color == grid[from.row][from.col]->color) {
-            return false; // La pièce au milieu doit être une pièce adverse
+        if (!grid[midRow][midCol] || grid[midRow][midCol]->color == piece->color) {
+            return false;
         }
 
-        return true;
+        return colDiff == 2;
     }
 
-    // Méthode pour déplacer une pièce
     bool GameBoard::movePiece(const position::Position& from, const position::Position& to) {
         if (isValidMove(from, to)) {
-            // Déplacer la pièce
             grid[to.row][to.col] = std::move(grid[from.row][from.col]);
             grid[from.row][from.col].reset();
 
-            // Vérification de promotion
             if (to.row == 0 || to.row == size - 1) {
                 promoteToKing(to);
             }
@@ -109,19 +128,15 @@ namespace board {
         return false;
     }
 
-
-    // Méthode pour capturer une pièce
     bool GameBoard::capturePiece(const position::Position& from, const position::Position& to) {
         if (isValidCapture(from, to)) {
             int midRow = (from.row + to.row) / 2;
             int midCol = (from.col + to.col) / 2;
 
-            // Capturer la pièce ennemie
             grid[to.row][to.col] = std::move(grid[from.row][from.col]);
             grid[from.row][from.col].reset();
-            grid[midRow][midCol].reset(); // Supprimer la pièce capturée
+            grid[midRow][midCol].reset();
 
-            // Vérification de promotion
             if (to.row == 0 || to.row == size - 1) {
                 promoteToKing(to);
             }
@@ -132,12 +147,10 @@ namespace board {
     }
 
 
-    // Méthode pour accéder à une case de la grille
     std::unique_ptr<piece::Piece>& GameBoard::getPieceAt(const position::Position& pos) {
         return grid[pos.row][pos.col];
     }
 
-    // Méthode constante pour accéder à une case de la grille (pour éviter la modification de la grille)
     const std::unique_ptr<piece::Piece>& GameBoard::getPieceAt(const position::Position& pos) const {
         return grid[pos.row][pos.col];
     }
