@@ -124,18 +124,25 @@ namespace board {
                     auto pieceShape = grid[row][col]->draw(tileSize * 0.8f);
                     pieceShape.setPosition(col * tileSize + tileSize * 0.1f, row * tileSize + tileSize * 0.1f);
                     window.draw(pieceShape);
+                }
+            }
+        }
 
-                    if (selectedPos.row == row && selectedPos.col == col && grid[row][col]->color == currentPlayer) {
-                        sf::RectangleShape highlight({tileSize * 0.9f, tileSize * 0.9f});
-                        highlight.setFillColor(sf::Color::Transparent);
-                        highlight.setOutlineColor(sf::Color::Yellow);
-                        highlight.setOutlineThickness(3);
-                        highlight.setPosition(
-                            col * tileSize + tileSize * 0.05f,
-                            row * tileSize + tileSize * 0.05f
-                        );
-                        window.draw(highlight);
-                    }
+        if (selectedPos.row != -1 && selectedPos.col != -1) {
+            auto validMoves = getValidMoves(selectedPos);
+
+            PieceColor currentPlayer = getCurrentPlayer();
+
+            auto& pieceAtSelectedPos = getPieceAt(selectedPos);
+            if (pieceAtSelectedPos && pieceAtSelectedPos->color == currentPlayer) {
+                for (const auto& move : validMoves) {
+                    sf::CircleShape highlight(tileSize * 0.3f);
+                    highlight.setFillColor(sf::Color(0, 255, 0, 150));
+
+                    highlight.setPosition(move.col * tileSize + tileSize / 2 - highlight.getRadius(),
+                                          move.row * tileSize + tileSize / 2 - highlight.getRadius());
+
+                    window.draw(highlight);
                 }
             }
         }

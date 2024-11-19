@@ -47,10 +47,27 @@ export namespace board {
             return {whiteCount, blackCount};
         }
 
+        std::vector<position::Position> getValidMoves(const position::Position& from) const {
+            std::vector<position::Position> validMoves;
+
+            if (getPieceAt(from)) {
+                for (int row = 0; row < size; ++row) {
+                    for (int col = 0; col < size; ++col) {
+                        position::Position to(row, col);
+                        if (isValidMove(from, to) || isValidCapture(from, to)) {
+                            validMoves.push_back(to);
+                        }
+                    }
+                }
+            }
+
+            return validMoves;
+        }
+
     private:
-        std::vector<std::vector<std::unique_ptr<piece::Piece>>> grid; // Plateau de jeu
-        PieceColor currentPlayer; // Couleur du joueur actuel
-        std::unique_ptr<soundManager::SoundManager> soundManager; // Gestionnaire de sons
-        sf::RenderWindow* window = nullptr; // Fenêtre SFML (optionnel)
+        std::vector<std::vector<std::unique_ptr<piece::Piece>>> grid;
+        PieceColor currentPlayer;
+        std::unique_ptr<soundManager::SoundManager> soundManager;
+        sf::RenderWindow* window = nullptr;
     };
 }
