@@ -9,10 +9,11 @@ import position;
 import soundManager;
 
 namespace board {
-    GameBoard::GameBoard()
+    GameBoard::GameBoard(sf::RenderWindow* renderWindow)
         : grid(size),
           currentPlayer(PieceColor::White),
-          soundManager(std::make_unique<soundManager::SoundManager>()) {
+          soundManager(std::make_unique<soundManager::SoundManager>()),
+          window(renderWindow) {
         for (auto& row : grid) {
             row.resize(size);
         }
@@ -37,31 +38,25 @@ namespace board {
     }
 
     void GameBoard::animatePieceMove(const position::Position& from, const position::Position& to, sf::RenderWindow& window) {
-        float duration = 0.5f; // Durée de l'animation en secondes
+        float duration = 0.5f;
         sf::Clock clock;
 
-        // Taille de la case
         float tileSize = 800.0f / GameBoard::size;
 
-        // Positions de départ et d'arrivée en pixels
         sf::Vector2f startPos(from.col * tileSize, from.row * tileSize);
         sf::Vector2f endPos(to.col * tileSize, to.row * tileSize);
 
-        // Récupérer la pièce à animer
         auto piece = std::move(grid[from.row][from.col]);
         grid[from.row][from.col].reset();
 
-        // Boucle pour interpoler
         while (clock.getElapsedTime().asSeconds() < duration) {
             float t = clock.getElapsedTime().asSeconds() / duration;
 
-            // Calcul de la position interpolée
             sf::Vector2f currentPos = startPos + t * (endPos - startPos);
 
-            // Effacer et redessiner tout
-            window.clear(sf::Color(50, 50, 50)); // Couleur de fond
-            draw(window, position::Position(-1, -1)); // Dessiner le plateau
-            // Dessiner la pièce en cours de mouvement
+            window.clear(sf::Color(50, 50, 50));
+            draw(window, position::Position(-1, -1));
+
             if (piece) {
                 auto pieceShape = piece->draw(tileSize * 0.8f);
                 pieceShape.setPosition(currentPos + sf::Vector2f(tileSize * 0.1f, tileSize * 0.1f));
@@ -70,16 +65,50 @@ namespace board {
             window.display();
         }
 
-        // Place la pièce dans sa position finale
         grid[to.row][to.col] = std::move(piece);
     }
 
-    void GameBoard::promoteToKing(const position::Position& pos) {
+    void GameBoard::animatePromotion(const position::Position& pos, sf::RenderWindow& window) {
+        sf::CircleShape pieceShape;
+        if (auto& piece = grid[pos.row][pos.col]) {
+            float tileSize = 800.0f / size;
+            float baseSize = tileSize * 0.8f / 2.0f;
+            pieceShape = piece->draw(tileSize * 0.8f);
+            pieceShape.setPosition(pos.col * tileSize + tileSize * 0.1f, pos.row * tileSize + tileSize * 0.1f);
+
+            sf::Clock clock;
+            float duration = 1.0f;
+            while (clock.getElapsedTime().asSeconds() < duration) {
+                float t = clock.getElapsedTime().asSeconds() / duration;
+                float scale = 1.0f + 0.2f * std::sin(t * 3.14f * 2);
+                pieceShape.setScale(scale, scale);
+
+                pieceShape.setOutlineThickness(5 * (1.0f - t));
+                pieceShape.setOutlineColor(sf::Color(255, 215, 0, static_cast<sf::Uint8>((1.0f - t) * 255)));
+
+                window.clear(sf::Color(50, 50, 50));
+                draw(window, position::Position(-1, -1));
+                window.draw(pieceShape);
+                window.display();
+            }
+        }
+    }
+
+    void board::GameBoard::promoteToKing(const position::Position& pos) {
         if (grid[pos.row][pos.col] &&
             dynamic_cast<piece::King*>(grid[pos.row][pos.col].get()) == nullptr) {
             grid[pos.row][pos.col] = std::make_unique<piece::King>(grid[pos.row][pos.col]->color);
+
+            if (soundManager) {
+                soundManager->playSound("promote");
+            }
+
+            if (window) {
+                animatePromotion(pos, *window);
+            }
         }
     }
+
 
     void GameBoard::draw(sf::RenderWindow &window, const position::Position& selectedPos) const {
         const float tileSize = 800.0f / size;

@@ -15,10 +15,11 @@ export namespace board {
     public:
         static constexpr int size = 8;
 
-        GameBoard();
+        GameBoard(sf::RenderWindow* renderWindow);
         void setupPieces();
         void promoteToKing(const position::Position& pos);
         void draw(sf::RenderWindow &window, const position::Position& selectedPos) const;
+        void animatePromotion(const position::Position& pos, sf::RenderWindow& window);
 
         static void drawGameInfo(sf::RenderWindow& window, const GameBoard& gameBoard, sf::Font& font);
         bool movePiece(const position::Position& from, const position::Position& to, sf::RenderWindow& window);

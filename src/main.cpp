@@ -11,7 +11,7 @@ int main() {
     window.setFramerateLimit(144);
 
     sf::View fixedView(sf::FloatRect(0, 0, 800, 800));
-    board::GameBoard gameBoard;
+    board::GameBoard gameBoard(&window);
 
     position::Position selectedPos(-1, -1);
 
@@ -33,7 +33,7 @@ int main() {
             }
 
             if (event.type == sf::Event::MouseButtonPressed) {
-                Game::handleClick(event, selectedPos, gameBoard, window); // Passer 'window'
+                Game::handleClick(event, selectedPos, gameBoard, window);
             }
         }
 
