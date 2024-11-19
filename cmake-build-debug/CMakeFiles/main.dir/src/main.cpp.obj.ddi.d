@@ -1,29 +1,32 @@
 CMakeFiles\main.dir\src\main.cpp.obj.ddi: \
   C:/C++/TP/Project/DameCplusplus/src/main.cpp \
-  C:/C++/TP/Project/DameCplusplus/cmake-build-debug/_deps/sfml-src/include/SFML/Graphics.hpp \
-  C:/C++/TP/Project/DameCplusplus/cmake-build-debug/_deps/sfml-src/include/SFML/Window.hpp \
-  C:/C++/TP/Project/DameCplusplus/cmake-build-debug/_deps/sfml-src/include/SFML/System.hpp \
-  C:/C++/TP/Project/DameCplusplus/cmake-build-debug/_deps/sfml-src/include/SFML/Config.hpp \
-  C:/C++/TP/Project/DameCplusplus/cmake-build-debug/_deps/sfml-src/include/SFML/System/Clock.hpp \
-  C:/C++/TP/Project/DameCplusplus/cmake-build-debug/_deps/sfml-src/include/SFML/System/Export.hpp \
-  C:/C++/TP/Project/DameCplusplus/cmake-build-debug/_deps/sfml-src/include/SFML/System/Time.hpp \
-  C:/C++/TP/Project/DameCplusplus/cmake-build-debug/_deps/sfml-src/include/SFML/System/Err.hpp \
-  C:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/include/c++/v1/ostream \
+  C:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/include/c++/v1/iostream \
   C:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/include/c++/v1/__assert \
   C:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/include/c++/v1/__assertion_handler \
   C:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/include/c++/v1/__config \
   C:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/include/c++/v1/__config_site \
   C:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/include/c++/v1/__verbose_abort \
   C:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/include/c++/v1/__availability \
-  C:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/include/c++/v1/__exception/operations.h \
-  C:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/include/c++/v1/cstddef \
+  C:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/include/c++/v1/version \
+  C:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/include/c++/v1/ios \
+  C:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/include/c++/v1/__fwd/ios.h \
+  C:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/include/c++/v1/__fwd/string.h \
+  C:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/include/c++/v1/__fwd/memory_resource.h \
+  C:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/include/c++/v1/__ios/fpos.h \
+  C:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/include/c++/v1/__locale \
+  C:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/include/c++/v1/__memory/shared_ptr.h \
+  C:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/include/c++/v1/__compare/compare_three_way.h \
+  C:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/include/c++/v1/__compare/three_way_comparable.h \
+  C:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/include/c++/v1/__compare/common_comparison_category.h \
+  C:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/include/c++/v1/__compare/ordering.h \
   C:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/include/c++/v1/__type_traits/enable_if.h \
+  C:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/include/c++/v1/__type_traits/is_same.h \
   C:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/include/c++/v1/__type_traits/integral_constant.h \
+  C:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/include/c++/v1/cstddef \
   C:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/include/c++/v1/__type_traits/is_integral.h \
   C:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/include/c++/v1/__type_traits/remove_cv.h \
   C:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/include/c++/v1/__type_traits/remove_const.h \
   C:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/include/c++/v1/__type_traits/remove_volatile.h \
-  C:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/include/c++/v1/version \
   C:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/include/c++/v1/stddef.h \
   C:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/lib/clang/18/include/stddef.h \
   C:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/lib/clang/18/include/__stddef_ptrdiff_t.h \
@@ -33,15 +36,6 @@ CMakeFiles\main.dir\src\main.cpp.obj.ddi: \
   C:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/lib/clang/18/include/__stddef_nullptr_t.h \
   C:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/lib/clang/18/include/__stddef_max_align_t.h \
   C:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/lib/clang/18/include/__stddef_offsetof.h \
-  C:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/include/c++/v1/__fwd/ostream.h \
-  C:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/include/c++/v1/__fwd/string.h \
-  C:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/include/c++/v1/__fwd/memory_resource.h \
-  C:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/include/c++/v1/__memory/shared_ptr.h \
-  C:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/include/c++/v1/__compare/compare_three_way.h \
-  C:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/include/c++/v1/__compare/three_way_comparable.h \
-  C:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/include/c++/v1/__compare/common_comparison_category.h \
-  C:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/include/c++/v1/__compare/ordering.h \
-  C:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/include/c++/v1/__type_traits/is_same.h \
   C:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/include/c++/v1/__concepts/common_reference_with.h \
   C:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/include/c++/v1/__concepts/convertible_to.h \
   C:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/include/c++/v1/__type_traits/is_convertible.h \
@@ -92,6 +86,7 @@ CMakeFiles\main.dir\src\main.cpp.obj.ddi: \
   C:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/include/c++/v1/__type_traits/nat.h \
   C:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/include/c++/v1/__functional/weak_result_type.h \
   C:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/include/c++/v1/__memory/addressof.h \
+  C:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/include/c++/v1/__fwd/ostream.h \
   C:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/include/c++/v1/__iterator/access.h \
   C:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/include/c++/v1/__memory/allocation_guard.h \
   C:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/include/c++/v1/__memory/allocator_traits.h \
@@ -273,46 +268,7 @@ CMakeFiles\main.dir\src\main.cpp.obj.ddi: \
   C:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/include/c++/v1/__type_traits/is_bounded_array.h \
   C:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/include/c++/v1/typeinfo \
   C:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/include/c++/v1/__atomic/memory_order.h \
-  C:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/include/c++/v1/__system_error/error_code.h \
-  C:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/include/c++/v1/__system_error/errc.h \
-  C:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/include/c++/v1/cerrno \
-  C:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/include/c++/v1/errno.h \
-  C:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/include/errno.h \
-  C:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/include/c++/v1/__system_error/error_category.h \
-  C:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/include/c++/v1/string \
-  C:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/include/c++/v1/__algorithm/max.h \
-  C:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/include/c++/v1/__algorithm/max_element.h \
-  C:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/include/c++/v1/__algorithm/remove.h \
-  C:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/include/c++/v1/__algorithm/find.h \
-  C:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/include/c++/v1/__algorithm/find_segment_if.h \
-  C:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/include/c++/v1/__bit/countr.h \
-  C:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/include/c++/v1/__bit/rotate.h \
-  C:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/include/c++/v1/__bit/invert_if.h \
-  C:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/include/c++/v1/__fwd/bit_reference.h \
-  C:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/include/c++/v1/cwchar \
-  C:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/include/c++/v1/cwctype \
-  C:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/include/c++/v1/cctype \
-  C:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/include/c++/v1/ctype.h \
-  C:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/include/ctype.h \
-  C:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/include/c++/v1/wctype.h \
-  C:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/include/wctype.h \
-  C:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/include/c++/v1/wchar.h \
-  C:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/include/wchar.h \
-  C:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/include/corecrt_stdio_config.h \
-  C:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/include/corecrt_wstdlib.h \
-  C:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/include/_mingw_off_t.h \
-  C:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/include/_mingw_stat64.h \
-  C:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/include/swprintf.inl \
-  C:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/include/sec_api/wchar_s.h \
-  C:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/include/c++/v1/__algorithm/find_if.h \
-  C:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/include/c++/v1/__algorithm/remove_if.h \
-  C:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/include/c++/v1/__format/enable_insertable.h \
-  C:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/include/c++/v1/__ios/fpos.h \
-  C:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/include/c++/v1/__fwd/ios.h \
-  C:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/include/c++/v1/__iterator/wrap_iter.h \
-  C:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/include/c++/v1/__memory/swap_allocator.h \
-  C:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/include/c++/v1/__memory_resource/polymorphic_allocator.h \
-  C:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/include/c++/v1/__memory_resource/memory_resource.h \
+  C:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/include/c++/v1/__mutex/once_flag.h \
   C:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/include/c++/v1/tuple \
   C:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/include/c++/v1/__memory/allocator_arg_t.h \
   C:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/include/c++/v1/__memory/uses_allocator.h \
@@ -350,6 +306,7 @@ CMakeFiles\main.dir\src\main.cpp.obj.ddi: \
   C:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/include/c++/v1/__math/trigonometric_functions.h \
   C:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/include/c++/v1/stdlib.h \
   C:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/include/stdlib.h \
+  C:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/include/corecrt_wstdlib.h \
   C:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/lib/clang/18/include/limits.h \
   C:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/include/limits.h \
   C:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/include/sec_api/stdlib_s.h \
@@ -358,6 +315,45 @@ CMakeFiles\main.dir\src\main.cpp.obj.ddi: \
   C:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/include/c++/v1/__compare/compare_strong_order_fallback.h \
   C:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/include/c++/v1/__compare/compare_weak_order_fallback.h \
   C:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/include/c++/v1/__compare/is_eq.h \
+  C:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/include/c++/v1/__utility/no_destroy.h \
+  C:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/include/c++/v1/cctype \
+  C:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/include/c++/v1/ctype.h \
+  C:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/include/ctype.h \
+  C:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/include/c++/v1/clocale \
+  C:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/include/c++/v1/locale.h \
+  C:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/include/locale.h \
+  C:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/include/c++/v1/stdio.h \
+  C:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/include/stdio.h \
+  C:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/include/corecrt_stdio_config.h \
+  C:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/include/_mingw_off_t.h \
+  C:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/include/swprintf.inl \
+  C:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/include/sec_api/stdio_s.h \
+  C:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/include/c++/v1/cstdlib \
+  C:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/include/c++/v1/string \
+  C:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/include/c++/v1/__algorithm/max.h \
+  C:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/include/c++/v1/__algorithm/max_element.h \
+  C:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/include/c++/v1/__algorithm/remove.h \
+  C:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/include/c++/v1/__algorithm/find.h \
+  C:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/include/c++/v1/__algorithm/find_segment_if.h \
+  C:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/include/c++/v1/__bit/countr.h \
+  C:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/include/c++/v1/__bit/rotate.h \
+  C:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/include/c++/v1/__bit/invert_if.h \
+  C:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/include/c++/v1/__fwd/bit_reference.h \
+  C:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/include/c++/v1/cwchar \
+  C:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/include/c++/v1/cwctype \
+  C:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/include/c++/v1/wctype.h \
+  C:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/include/wctype.h \
+  C:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/include/c++/v1/wchar.h \
+  C:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/include/wchar.h \
+  C:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/include/_mingw_stat64.h \
+  C:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/include/sec_api/wchar_s.h \
+  C:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/include/c++/v1/__algorithm/find_if.h \
+  C:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/include/c++/v1/__algorithm/remove_if.h \
+  C:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/include/c++/v1/__format/enable_insertable.h \
+  C:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/include/c++/v1/__iterator/wrap_iter.h \
+  C:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/include/c++/v1/__memory/swap_allocator.h \
+  C:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/include/c++/v1/__memory_resource/polymorphic_allocator.h \
+  C:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/include/c++/v1/__memory_resource/memory_resource.h \
   C:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/include/c++/v1/__ranges/container_compatible_range.h \
   C:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/include/c++/v1/__ranges/from_range.h \
   C:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/include/c++/v1/__string/char_traits.h \
@@ -367,9 +363,6 @@ CMakeFiles\main.dir\src\main.cpp.obj.ddi: \
   C:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/include/c++/v1/__algorithm/search.h \
   C:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/include/c++/v1/__algorithm/find_first_of.h \
   C:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/include/c++/v1/cstdio \
-  C:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/include/c++/v1/stdio.h \
-  C:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/include/stdio.h \
-  C:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/include/sec_api/stdio_s.h \
   C:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/include/c++/v1/iosfwd \
   C:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/include/c++/v1/__fwd/fstream.h \
   C:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/include/c++/v1/__fwd/istream.h \
@@ -391,7 +384,42 @@ CMakeFiles\main.dir\src\main.cpp.obj.ddi: \
   C:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/include/c++/v1/__iterator/empty.h \
   C:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/include/c++/v1/__iterator/reverse_access.h \
   C:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/include/c++/v1/__iterator/size.h \
+  C:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/include/c++/v1/__support/win32/locale_win32.h \
+  C:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/include/c++/v1/__system_error/error_category.h \
+  C:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/include/c++/v1/__system_error/error_code.h \
+  C:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/include/c++/v1/__system_error/errc.h \
+  C:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/include/c++/v1/cerrno \
+  C:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/include/c++/v1/errno.h \
+  C:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/include/errno.h \
   C:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/include/c++/v1/__system_error/error_condition.h \
+  C:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/include/c++/v1/__system_error/system_error.h \
+  C:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/include/c++/v1/__atomic/atomic.h \
+  C:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/include/c++/v1/__atomic/atomic_base.h \
+  C:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/include/c++/v1/__atomic/atomic_sync.h \
+  C:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/include/c++/v1/__atomic/contention_t.h \
+  C:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/include/c++/v1/__atomic/cxx_atomic_impl.h \
+  C:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/include/c++/v1/__atomic/is_always_lock_free.h \
+  C:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/include/c++/v1/__chrono/duration.h \
+  C:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/include/c++/v1/ratio \
+  C:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/include/c++/v1/__thread/poll_with_backoff.h \
+  C:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/include/c++/v1/__chrono/high_resolution_clock.h \
+  C:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/include/c++/v1/__chrono/steady_clock.h \
+  C:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/include/c++/v1/__chrono/time_point.h \
+  C:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/include/c++/v1/__chrono/system_clock.h \
+  C:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/include/c++/v1/ctime \
+  C:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/include/time.h \
+  C:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/include/sys/timeb.h \
+  C:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/include/sec_api/sys/timeb_s.h \
+  C:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/include/_timeval.h \
+  C:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/include/pthread_time.h \
+  C:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/include/c++/v1/__threading_support \
+  C:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/include/c++/v1/__chrono/convert_to_timespec.h \
+  C:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/include/c++/v1/__atomic/check_memory_order.h \
+  C:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/include/c++/v1/istream \
+  C:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/include/c++/v1/__iterator/istreambuf_iterator.h \
+  C:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/include/c++/v1/__iterator/default_sentinel.h \
+  C:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/include/c++/v1/ostream \
+  C:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/include/c++/v1/__exception/operations.h \
   C:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/include/c++/v1/bitset \
   C:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/include/c++/v1/__algorithm/count.h \
   C:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/include/c++/v1/__bit/popcount.h \
@@ -427,41 +455,7 @@ CMakeFiles\main.dir\src\main.cpp.obj.ddi: \
   C:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/include/c++/v1/locale \
   C:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/include/c++/v1/__algorithm/equal.h \
   C:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/include/c++/v1/__algorithm/reverse.h \
-  C:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/include/c++/v1/__iterator/istreambuf_iterator.h \
-  C:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/include/c++/v1/__iterator/default_sentinel.h \
   C:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/include/c++/v1/__iterator/ostreambuf_iterator.h \
-  C:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/include/c++/v1/__locale \
-  C:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/include/c++/v1/__mutex/once_flag.h \
-  C:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/include/c++/v1/__utility/no_destroy.h \
-  C:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/include/c++/v1/clocale \
-  C:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/include/c++/v1/locale.h \
-  C:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/include/locale.h \
-  C:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/include/c++/v1/cstdlib \
-  C:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/include/c++/v1/__support/win32/locale_win32.h \
-  C:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/include/c++/v1/ctime \
-  C:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/include/time.h \
-  C:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/include/sys/timeb.h \
-  C:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/include/sec_api/sys/timeb_s.h \
-  C:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/include/_timeval.h \
-  C:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/include/pthread_time.h \
-  C:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/include/c++/v1/ios \
-  C:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/include/c++/v1/__system_error/system_error.h \
-  C:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/include/c++/v1/__atomic/atomic.h \
-  C:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/include/c++/v1/__atomic/atomic_base.h \
-  C:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/include/c++/v1/__atomic/atomic_sync.h \
-  C:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/include/c++/v1/__atomic/contention_t.h \
-  C:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/include/c++/v1/__atomic/cxx_atomic_impl.h \
-  C:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/include/c++/v1/__atomic/is_always_lock_free.h \
-  C:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/include/c++/v1/__chrono/duration.h \
-  C:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/include/c++/v1/ratio \
-  C:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/include/c++/v1/__thread/poll_with_backoff.h \
-  C:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/include/c++/v1/__chrono/high_resolution_clock.h \
-  C:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/include/c++/v1/__chrono/steady_clock.h \
-  C:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/include/c++/v1/__chrono/time_point.h \
-  C:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/include/c++/v1/__chrono/system_clock.h \
-  C:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/include/c++/v1/__threading_support \
-  C:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/include/c++/v1/__chrono/convert_to_timespec.h \
-  C:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/include/c++/v1/__atomic/check_memory_order.h \
   C:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/include/c++/v1/streambuf \
   C:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/include/c++/v1/__locale_dir/locale_base_api/bsd_locale_defaults.h \
   C:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/include/c++/v1/optional \
@@ -529,6 +523,14 @@ CMakeFiles\main.dir\src\main.cpp.obj.ddi: \
   C:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/include/c++/v1/__format/formatter_string.h \
   C:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/include/c++/v1/__format/formatter_tuple.h \
   C:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/include/c++/v1/print \
+  C:/C++/TP/Project/DameCplusplus/cmake-build-debug/_deps/sfml-src/include/SFML/Graphics.hpp \
+  C:/C++/TP/Project/DameCplusplus/cmake-build-debug/_deps/sfml-src/include/SFML/Window.hpp \
+  C:/C++/TP/Project/DameCplusplus/cmake-build-debug/_deps/sfml-src/include/SFML/System.hpp \
+  C:/C++/TP/Project/DameCplusplus/cmake-build-debug/_deps/sfml-src/include/SFML/Config.hpp \
+  C:/C++/TP/Project/DameCplusplus/cmake-build-debug/_deps/sfml-src/include/SFML/System/Clock.hpp \
+  C:/C++/TP/Project/DameCplusplus/cmake-build-debug/_deps/sfml-src/include/SFML/System/Export.hpp \
+  C:/C++/TP/Project/DameCplusplus/cmake-build-debug/_deps/sfml-src/include/SFML/System/Time.hpp \
+  C:/C++/TP/Project/DameCplusplus/cmake-build-debug/_deps/sfml-src/include/SFML/System/Err.hpp \
   C:/C++/TP/Project/DameCplusplus/cmake-build-debug/_deps/sfml-src/include/SFML/System/FileInputStream.hpp \
   C:/C++/TP/Project/DameCplusplus/cmake-build-debug/_deps/sfml-src/include/SFML/System/InputStream.hpp \
   C:/C++/TP/Project/DameCplusplus/cmake-build-debug/_deps/sfml-src/include/SFML/System/NonCopyable.hpp \

@@ -74,6 +74,31 @@ namespace board {
         }
     }
 
+    void GameBoard::drawGameInfo(sf::RenderWindow& window, const GameBoard& gameBoard, sf::Font& font) {
+        auto [whiteCount, blackCount] = gameBoard.countPieces();
+
+        sf::Text currentPlayerText;
+        currentPlayerText.setFont(font);
+        currentPlayerText.setCharacterSize(20);
+        currentPlayerText.setFillColor(sf::Color::Green);
+        currentPlayerText.setString("Tour actuel : " +
+            std::string(gameBoard.getCurrentPlayer() == PieceColor::White ? "Blanc" : "Noir"));
+        currentPlayerText.setPosition(10.f, 10.f);
+        window.draw(currentPlayerText);
+
+        sf::Text pieceCountText;
+        pieceCountText.setFont(font);
+        pieceCountText.setCharacterSize(20);
+        pieceCountText.setFillColor(sf::Color::Green);
+        pieceCountText.setString("Blancs : " + std::to_string(whiteCount) +
+            " | Noirs : " + std::to_string(blackCount));
+        pieceCountText.setPosition(10.f, 40.f);
+        window.draw(pieceCountText);
+    }
+
+    PieceColor GameBoard::getCurrentPlayer() const {
+        return currentPlayer;
+    }
 
     bool GameBoard::isValidMove(const position::Position& from, const position::Position& to) const {
         if (!to.isValid() || grid[to.row][to.col]) {

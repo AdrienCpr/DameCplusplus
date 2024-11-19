@@ -1,3 +1,4 @@
+#include <iostream>
 #include <SFML/Graphics.hpp>
 
 import board;
@@ -15,6 +16,12 @@ int main() {
     position::Position selectedPos(-1, -1);
 
     windowManager::handleResize(window, fixedView);
+
+    sf::Font font;
+    if (!font.loadFromFile("resources/fonts/arial.ttf")) {
+        std::cerr << "Erreur : Impossible de charger la police." << std::endl;
+        return 1;
+    }
 
     while (window.isOpen()) {
         sf::Event event;
@@ -34,6 +41,7 @@ int main() {
 
         window.clear(sf::Color(50, 50, 50));
         gameBoard.draw(window, selectedPos);
+        gameBoard.drawGameInfo(window, gameBoard, font);
         window.display();
     }
 
