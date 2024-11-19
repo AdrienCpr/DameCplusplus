@@ -28,14 +28,12 @@ int main() {
         while (window.pollEvent(event)) {
             if (event.type == sf::Event::Closed) {
                 window.close();
-            }
-
-            else if (event.type == sf::Event::Resized) {
+            } else if (event.type == sf::Event::Resized) {
                 windowManager::handleResize(window, fixedView);
             }
 
             if (event.type == sf::Event::MouseButtonPressed) {
-                Game::handleClick(event, selectedPos, gameBoard);
+                Game::handleClick(event, selectedPos, gameBoard, window); // Passer 'window'
             }
         }
 

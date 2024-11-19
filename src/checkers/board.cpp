@@ -36,6 +36,44 @@ namespace board {
         }
     }
 
+    void GameBoard::animatePieceMove(const position::Position& from, const position::Position& to, sf::RenderWindow& window) {
+        float duration = 0.5f; // Durée de l'animation en secondes
+        sf::Clock clock;
+
+        // Taille de la case
+        float tileSize = 800.0f / GameBoard::size;
+
+        // Positions de départ et d'arrivée en pixels
+        sf::Vector2f startPos(from.col * tileSize, from.row * tileSize);
+        sf::Vector2f endPos(to.col * tileSize, to.row * tileSize);
+
+        // Récupérer la pièce à animer
+        auto piece = std::move(grid[from.row][from.col]);
+        grid[from.row][from.col].reset();
+
+        // Boucle pour interpoler
+        while (clock.getElapsedTime().asSeconds() < duration) {
+            float t = clock.getElapsedTime().asSeconds() / duration;
+
+            // Calcul de la position interpolée
+            sf::Vector2f currentPos = startPos + t * (endPos - startPos);
+
+            // Effacer et redessiner tout
+            window.clear(sf::Color(50, 50, 50)); // Couleur de fond
+            draw(window, position::Position(-1, -1)); // Dessiner le plateau
+            // Dessiner la pièce en cours de mouvement
+            if (piece) {
+                auto pieceShape = piece->draw(tileSize * 0.8f);
+                pieceShape.setPosition(currentPos + sf::Vector2f(tileSize * 0.1f, tileSize * 0.1f));
+                window.draw(pieceShape);
+            }
+            window.display();
+        }
+
+        // Place la pièce dans sa position finale
+        grid[to.row][to.col] = std::move(piece);
+    }
+
     void GameBoard::promoteToKing(const position::Position& pos) {
         if (grid[pos.row][pos.col] &&
             dynamic_cast<piece::King*>(grid[pos.row][pos.col].get()) == nullptr) {
@@ -150,11 +188,10 @@ namespace board {
     }
 
 
-    bool GameBoard::movePiece(const position::Position& from, const position::Position& to) {
+    bool GameBoard::movePiece(const position::Position& from, const position::Position& to, sf::RenderWindow& window) {
         if (grid[from.row][from.col] && grid[from.row][from.col]->color == currentPlayer) {
             if (isValidMove(from, to)) {
-                grid[to.row][to.col] = std::move(grid[from.row][from.col]);
-                grid[from.row][from.col].reset();
+                animatePieceMove(from, to, window);
 
                 if (to.row == 0 || to.row == size - 1) {
                     promoteToKing(to);

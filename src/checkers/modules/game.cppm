@@ -9,7 +9,7 @@ import position;
 
 export namespace Game {
 
-    void handleClick(sf::Event& event, position::Position& selectedPos, board::GameBoard& gameBoard) {
+    void handleClick(sf::Event& event, position::Position& selectedPos, board::GameBoard& gameBoard, sf::RenderWindow& window) {
         float tileSize = 800.0f / board::GameBoard::size;
         int row = event.mouseButton.y / tileSize;
         int col = event.mouseButton.x / tileSize;
@@ -23,7 +23,7 @@ export namespace Game {
                 }
             } else {
                 if (gameBoard.isValidMove(selectedPos, clickedPos)) {
-                    gameBoard.movePiece(selectedPos, clickedPos);
+                    gameBoard.movePiece(selectedPos, clickedPos, window);  // Passer la fenêtre ici
                 }
                 else if (gameBoard.isValidCapture(selectedPos, clickedPos)) {
                     gameBoard.capturePiece(selectedPos, clickedPos);
