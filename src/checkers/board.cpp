@@ -150,41 +150,78 @@ namespace board {
 
     void GameBoard::drawGameInfo(sf::RenderWindow& window, const GameBoard& gameBoard, sf::Font& font, const windowManager::ViewInfo& views) {
         const float PADDING = 20.f;
-        const float INFO_WIDTH = 200.f;
+        const float INFO_WIDTH = 220.f;
+        const float INFO_HEIGHT = 100.f;
         const int CHAR_SIZE = 20;
         const float LINE_SPACING = 10.f;
+        const float BORDER_PADDING = 10.f;
+        const float ICON_SIZE = 10.f;
+        const sf::Color WHITE_PIECE_COLOR(200, 173, 127);
 
         float baseX = views.boardPosition.x + views.boardSize + PADDING;
-        float baseY = views.boardPosition.y + (views.boardSize / 2.f) - 100.f;
+        float baseY = views.boardPosition.y + (views.boardSize / 2.f) - (INFO_HEIGHT / 2.f);
 
         auto [whiteCount, blackCount] = gameBoard.countPieces();
+
+        sf::RectangleShape infoBackground(sf::Vector2f(INFO_WIDTH, INFO_HEIGHT));
+        infoBackground.setPosition(baseX - BORDER_PADDING, baseY - BORDER_PADDING);
+        infoBackground.setFillColor(sf::Color(50, 50, 50, 200));
+        infoBackground.setOutlineColor(sf::Color::White);
+        infoBackground.setOutlineThickness(2.f);
 
         sf::Text currentPlayerText;
         currentPlayerText.setFont(font);
         currentPlayerText.setCharacterSize(CHAR_SIZE);
         currentPlayerText.setFillColor(sf::Color::White);
-        currentPlayerText.setString("Tour : " +
-            std::string(gameBoard.getCurrentPlayer() == PieceColor::White ? "Blanc" : "Noir"));
-        currentPlayerText.setPosition(baseX, baseY);
+        currentPlayerText.setString("Turn : ");
+        currentPlayerText.setPosition(baseX + BORDER_PADDING, baseY);
+
+        sf::CircleShape currentPlayerIcon(ICON_SIZE);
+        currentPlayerIcon.setFillColor(gameBoard.getCurrentPlayer() == PieceColor::White ? WHITE_PIECE_COLOR : sf::Color::Black);
+        currentPlayerIcon.setOutlineThickness(1.f);
+        currentPlayerIcon.setOutlineColor(sf::Color::White);
+        currentPlayerIcon.setPosition(
+            currentPlayerText.getPosition().x + currentPlayerText.getLocalBounds().width + 5.f,
+            currentPlayerText.getPosition().y + (CHAR_SIZE / 2.f - ICON_SIZE)
+        );
+
+        window.draw(infoBackground);
+        window.draw(currentPlayerText);
+        window.draw(currentPlayerIcon);
+
+        sf::CircleShape whiteIcon(ICON_SIZE);
+        whiteIcon.setFillColor(WHITE_PIECE_COLOR);
+        whiteIcon.setOutlineThickness(1.f);
+        whiteIcon.setOutlineColor(sf::Color::White);
+        whiteIcon.setPosition(baseX + BORDER_PADDING,
+            currentPlayerText.getPosition().y + currentPlayerText.getLocalBounds().height + LINE_SPACING + (CHAR_SIZE / 2.f - ICON_SIZE));
 
         sf::Text whiteScoreText;
         whiteScoreText.setFont(font);
         whiteScoreText.setCharacterSize(CHAR_SIZE);
         whiteScoreText.setFillColor(sf::Color::White);
-        whiteScoreText.setString("Blancs : " + std::to_string(whiteCount));
-        whiteScoreText.setPosition(baseX,
+        whiteScoreText.setString(": " + std::to_string(whiteCount));
+        whiteScoreText.setPosition(whiteIcon.getPosition().x + ICON_SIZE * 2.f + 5.f,
             currentPlayerText.getPosition().y + currentPlayerText.getLocalBounds().height + LINE_SPACING);
+
+        sf::CircleShape blackIcon(ICON_SIZE);
+        blackIcon.setFillColor(sf::Color::Black);
+        blackIcon.setOutlineThickness(1.f);
+        blackIcon.setOutlineColor(sf::Color::White);
+        blackIcon.setPosition(baseX + BORDER_PADDING,
+            whiteScoreText.getPosition().y + whiteScoreText.getLocalBounds().height + LINE_SPACING + (CHAR_SIZE / 2.f - ICON_SIZE));
 
         sf::Text blackScoreText;
         blackScoreText.setFont(font);
         blackScoreText.setCharacterSize(CHAR_SIZE);
         blackScoreText.setFillColor(sf::Color::White);
-        blackScoreText.setString("Noirs : " + std::to_string(blackCount));
-        blackScoreText.setPosition(baseX,
+        blackScoreText.setString(": " + std::to_string(blackCount));
+        blackScoreText.setPosition(blackIcon.getPosition().x + ICON_SIZE * 2.f + 5.f,
             whiteScoreText.getPosition().y + whiteScoreText.getLocalBounds().height + LINE_SPACING);
 
-        window.draw(currentPlayerText);
+        window.draw(whiteIcon);
         window.draw(whiteScoreText);
+        window.draw(blackIcon);
         window.draw(blackScoreText);
     }
 
