@@ -15,6 +15,9 @@
         },
         {
           "logical-name": "game"
+        },
+        {
+          "logical-name": "piece"
         }
       ]
     }

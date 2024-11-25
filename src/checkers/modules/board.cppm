@@ -30,7 +30,7 @@ export namespace board {
         std::unique_ptr<piece::Piece>& getPieceAt(const position::Position& pos);
         const std::unique_ptr<piece::Piece>& getPieceAt(const position::Position& pos) const;
         PieceColor getCurrentPlayer() const;
-        void animatePieceMove(const position::Position& from, const position::Position& to, sf::RenderWindow& window); // Animation des déplacements
+        void animatePieceMove(const position::Position& from, const position::Position& to, sf::RenderWindow& window);
 
         std::pair<int, int> countPieces() const {
             int whiteCount = 0, blackCount = 0;
@@ -47,6 +47,38 @@ export namespace board {
             }
             return {whiteCount, blackCount};
         }
+
+        std::optional<PieceColor> checkVictory() const {
+            auto [whiteCount, blackCount] = countPieces();
+
+            if (whiteCount == 0) {
+                return PieceColor::Black;
+            }
+            if (blackCount == 0) {
+                return PieceColor::White;
+            }
+
+            bool whiteHasMoves = false, blackHasMoves = false;
+            for (int row = 0; row < size; ++row) {
+                for (int col = 0; col < size; ++col) {
+                    position::Position pos(row, col);
+                    const auto& piece = getPieceAt(pos);
+                    if (piece) {
+                        auto moves = getValidMoves(pos);
+                        if (!moves.empty()) {
+                            if (piece->color == PieceColor::White) whiteHasMoves = true;
+                            if (piece->color == PieceColor::Black) blackHasMoves = true;
+                        }
+                    }
+                }
+            }
+
+            if (!whiteHasMoves) return PieceColor::Black;
+            if (!blackHasMoves) return PieceColor::White;
+
+            return std::nullopt;
+        }
+
 
         std::vector<position::Position> getValidMoves(const position::Position& from) const {
             std::vector<position::Position> validMoves;
