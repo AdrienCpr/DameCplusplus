@@ -148,26 +148,44 @@ namespace board {
         }
     }
 
-    void GameBoard::drawGameInfo(sf::RenderWindow& window, const GameBoard& gameBoard, sf::Font& font) {
+    void GameBoard::drawGameInfo(sf::RenderWindow& window, const GameBoard& gameBoard, sf::Font& font, const windowManager::ViewInfo& views) {
+        const float PADDING = 20.f;
+        const float INFO_WIDTH = 200.f;
+        const int CHAR_SIZE = 20;
+        const float LINE_SPACING = 10.f;
+
+        float baseX = views.boardPosition.x + views.boardSize + PADDING;
+        float baseY = views.boardPosition.y + (views.boardSize / 2.f) - 100.f;
+
         auto [whiteCount, blackCount] = gameBoard.countPieces();
 
         sf::Text currentPlayerText;
         currentPlayerText.setFont(font);
-        currentPlayerText.setCharacterSize(20);
-        currentPlayerText.setFillColor(sf::Color::Green);
-        currentPlayerText.setString("Tour actuel : " +
+        currentPlayerText.setCharacterSize(CHAR_SIZE);
+        currentPlayerText.setFillColor(sf::Color::White);
+        currentPlayerText.setString("Tour : " +
             std::string(gameBoard.getCurrentPlayer() == PieceColor::White ? "Blanc" : "Noir"));
-        currentPlayerText.setPosition(10.f, 10.f);
-        window.draw(currentPlayerText);
+        currentPlayerText.setPosition(baseX, baseY);
 
-        sf::Text pieceCountText;
-        pieceCountText.setFont(font);
-        pieceCountText.setCharacterSize(20);
-        pieceCountText.setFillColor(sf::Color::Green);
-        pieceCountText.setString("Blancs : " + std::to_string(whiteCount) +
-            " | Noirs : " + std::to_string(blackCount));
-        pieceCountText.setPosition(10.f, 40.f);
-        window.draw(pieceCountText);
+        sf::Text whiteScoreText;
+        whiteScoreText.setFont(font);
+        whiteScoreText.setCharacterSize(CHAR_SIZE);
+        whiteScoreText.setFillColor(sf::Color::White);
+        whiteScoreText.setString("Blancs : " + std::to_string(whiteCount));
+        whiteScoreText.setPosition(baseX,
+            currentPlayerText.getPosition().y + currentPlayerText.getLocalBounds().height + LINE_SPACING);
+
+        sf::Text blackScoreText;
+        blackScoreText.setFont(font);
+        blackScoreText.setCharacterSize(CHAR_SIZE);
+        blackScoreText.setFillColor(sf::Color::White);
+        blackScoreText.setString("Noirs : " + std::to_string(blackCount));
+        blackScoreText.setPosition(baseX,
+            whiteScoreText.getPosition().y + whiteScoreText.getLocalBounds().height + LINE_SPACING);
+
+        window.draw(currentPlayerText);
+        window.draw(whiteScoreText);
+        window.draw(blackScoreText);
     }
 
     PieceColor GameBoard::getCurrentPlayer() const {

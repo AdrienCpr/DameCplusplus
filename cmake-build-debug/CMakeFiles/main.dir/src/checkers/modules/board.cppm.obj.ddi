@@ -19,6 +19,9 @@
         },
         {
           "logical-name": "soundManager"
+        },
+        {
+          "logical-name": "windowManager"
         }
       ]
     }

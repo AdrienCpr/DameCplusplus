@@ -71,14 +71,16 @@
 		[
 			"piece",
 			"position",
-			"soundManager"
+			"soundManager",
+			"windowManager"
 		],
 		"game" : 
 		[
 			"board",
 			"piece",
 			"position",
-			"soundManager"
+			"soundManager",
+			"windowManager"
 		]
 	}
 }

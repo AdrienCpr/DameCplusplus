@@ -2,3 +2,4 @@
 -fmodule-file=position=CMakeFiles/main.dir/position.pcm
 -fmodule-file=soundManager=CMakeFiles/main.dir/soundManager.pcm
 -fmodule-file=board=CMakeFiles/main.dir/board.pcm
+-fmodule-file=windowManager=CMakeFiles/main.dir/windowManager.pcm

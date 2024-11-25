@@ -7,15 +7,13 @@ import windowManager;
 import game;
 
 int main() {
-    sf::RenderWindow window({800, 800}, "DameCplusplus", sf::Style::Default);
+    sf::RenderWindow window({1920, 1080}, "DameCplusplus", sf::Style::Default);
     window.setFramerateLimit(144);
 
-    sf::View fixedView(sf::FloatRect(0, 0, 800, 800));
+    auto views = windowManager::handleResize(window);
     board::GameBoard gameBoard(&window);
 
     position::Position selectedPos(-1, -1);
-
-    windowManager::handleResize(window, fixedView);
 
     sf::Font font;
     if (!font.loadFromFile("resources/fonts/arial.ttf")) {
@@ -29,18 +27,24 @@ int main() {
             if (event.type == sf::Event::Closed) {
                 window.close();
             } else if (event.type == sf::Event::Resized) {
-                windowManager::handleResize(window, fixedView);
+                views = windowManager::handleResize(window);
             }
 
             if (event.type == sf::Event::MouseButtonPressed) {
-                sf::Vector2f worldPos = windowManager::getMouseWorldPosition(window);
+                window.setView(views.gameView);
+                sf::Vector2f worldPos = windowManager::getMouseBoardPosition(window);
                 Game::handleClick(worldPos, selectedPos, gameBoard, window);
             }
         }
 
         window.clear(sf::Color(50, 50, 50));
+
+        window.setView(views.gameView);
         gameBoard.draw(window, selectedPos);
-        gameBoard.drawGameInfo(window, gameBoard, font);
+
+        window.setView(views.guiView);
+        gameBoard.drawGameInfo(window, gameBoard, font, views);
+
         window.display();
     }
 

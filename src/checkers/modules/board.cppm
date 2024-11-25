@@ -9,6 +9,7 @@ export module board;
 import piece;
 import position;
 import soundManager;
+import windowManager;
 
 export namespace board {
     class GameBoard {
@@ -21,7 +22,7 @@ export namespace board {
         void draw(sf::RenderWindow &window, const position::Position& selectedPos) const;
         void animatePromotion(const position::Position& pos, sf::RenderWindow& window);
 
-        static void drawGameInfo(sf::RenderWindow& window, const GameBoard& gameBoard, sf::Font& font);
+        static void drawGameInfo(sf::RenderWindow& window, const GameBoard& gameBoard, sf::Font& font, const windowManager::ViewInfo& views);
         bool movePiece(const position::Position& from, const position::Position& to, sf::RenderWindow& window);
         bool capturePiece(const position::Position& from, const position::Position& to);
         bool isValidMove(const position::Position& from, const position::Position& to) const;
