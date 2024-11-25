@@ -9,10 +9,10 @@ import position;
 
 export namespace Game {
 
-    void handleClick(sf::Event& event, position::Position& selectedPos, board::GameBoard& gameBoard, sf::RenderWindow& window) {
-        float tileSize = 800.0f / board::GameBoard::size;
-        int row = event.mouseButton.y / tileSize;
-        int col = event.mouseButton.x / tileSize;
+    void handleClick(const sf::Vector2f& worldPos, position::Position& selectedPos, board::GameBoard& gameBoard, sf::RenderWindow& window) {
+        float tileSize = 800.0f / board::GameBoard::size; // Taille d'une case
+        int row = static_cast<int>(worldPos.y / tileSize);
+        int col = static_cast<int>(worldPos.x / tileSize);
 
         position::Position clickedPos(row, col);
 
@@ -29,7 +29,7 @@ export namespace Game {
                     gameBoard.capturePiece(selectedPos, clickedPos);
                 }
 
-                selectedPos = position::Position(-1, -1);
+                selectedPos = position::Position(-1, -1); // Réinitialiser la sélection
             }
         }
     }

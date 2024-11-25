@@ -22,4 +22,8 @@ export namespace windowManager {
 
         window.setView(fixedView);
     }
+
+    sf::Vector2f getMouseWorldPosition(const sf::RenderWindow& window) {
+        return window.mapPixelToCoords(sf::Mouse::getPosition(window));
+    }
 }

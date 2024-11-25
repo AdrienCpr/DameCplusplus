@@ -33,7 +33,8 @@ int main() {
             }
 
             if (event.type == sf::Event::MouseButtonPressed) {
-                Game::handleClick(event, selectedPos, gameBoard, window);
+                sf::Vector2f worldPos = windowManager::getMouseWorldPosition(window);
+                Game::handleClick(worldPos, selectedPos, gameBoard, window);
             }
         }
 
