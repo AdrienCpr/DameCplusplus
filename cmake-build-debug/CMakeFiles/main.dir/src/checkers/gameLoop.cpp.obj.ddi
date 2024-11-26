@@ -1,0 +1,29 @@
+{
+  "revision": 0,
+  "rules": [
+    {
+      "primary-output": "CMakeFiles\\main.dir\\src\\checkers\\gameLoop.cpp.obj",
+      "requires": [
+        {
+          "logical-name": "board"
+        },
+        {
+          "logical-name": "windowManager"
+        },
+        {
+          "logical-name": "piece"
+        },
+        {
+          "logical-name": "game"
+        },
+        {
+          "logical-name": "position"
+        },
+        {
+          "logical-name": "gameLoop"
+        }
+      ]
+    }
+  ],
+  "version": 1
+}

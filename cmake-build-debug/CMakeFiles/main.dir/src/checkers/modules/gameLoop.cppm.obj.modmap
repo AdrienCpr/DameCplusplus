@@ -1,0 +1,8 @@
+-x c++-module
+-fmodule-output=CMakeFiles/main.dir/gameLoop.pcm
+-fmodule-file=board=CMakeFiles/main.dir/board.pcm
+-fmodule-file=windowManager=CMakeFiles/main.dir/windowManager.pcm
+-fmodule-file=piece=CMakeFiles/main.dir/piece.pcm
+-fmodule-file=game=CMakeFiles/main.dir/game.pcm
+-fmodule-file=position=CMakeFiles/main.dir/position.pcm
+-fmodule-file=soundManager=CMakeFiles/main.dir/soundManager.pcm

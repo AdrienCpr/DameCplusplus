@@ -1,0 +1,33 @@
+{
+  "revision": 0,
+  "rules": [
+    {
+      "primary-output": "CMakeFiles\\main.dir\\src\\checkers\\modules\\gameLoop.cppm.obj",
+      "provides": [
+        {
+          "is-interface": true,
+          "logical-name": "gameLoop",
+          "source-path": "C:/C++/TP/Project/DameCplusplus/src/checkers/modules/gameLoop.cppm"
+        }
+      ],
+      "requires": [
+        {
+          "logical-name": "board"
+        },
+        {
+          "logical-name": "windowManager"
+        },
+        {
+          "logical-name": "piece"
+        },
+        {
+          "logical-name": "game"
+        },
+        {
+          "logical-name": "position"
+        }
+      ]
+    }
+  ],
+  "version": 1
+}

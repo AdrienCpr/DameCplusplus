@@ -5,19 +5,10 @@
       "primary-output": "CMakeFiles\\main.dir\\src\\main.cpp.obj",
       "requires": [
         {
-          "logical-name": "board"
-        },
-        {
-          "logical-name": "position"
-        },
-        {
-          "logical-name": "windowManager"
-        },
-        {
           "logical-name": "game"
         },
         {
-          "logical-name": "piece"
+          "logical-name": "windowManager"
         }
       ]
     }

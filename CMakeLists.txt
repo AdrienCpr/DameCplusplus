@@ -20,6 +20,7 @@ add_executable(
         src/checkers/piece.cpp
         src/checkers/position.cpp
         src/checkers/soundManager.cpp
+        src/checkers/game.cpp
 )
 
 target_sources(
