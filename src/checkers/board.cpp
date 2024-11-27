@@ -9,7 +9,7 @@ import position;
 import soundManager;
 
 namespace board {
-    GameBoard::GameBoard(sf::RenderWindow* renderWindow)
+    GameBoard::GameBoard(sf::RenderWindow* renderWindow) noexcept
         : grid(size),
           currentPlayer(PieceColor::White),
           soundManager(std::make_unique<soundManager::SoundManager>()),
@@ -20,28 +20,26 @@ namespace board {
         setupPieces();
     }
 
-    void GameBoard::setupPieces() {
-        for (int row = 0; row < 3; ++row) {
-            for (int col = 0; col < size; ++col) {
-                if ((row + col) % 2 != 0) {
-                    grid[row][col] = std::make_unique<piece::Piece>(PieceColor::Black);
+    void GameBoard::setupPieces() noexcept {
+        auto placePieces = [this](int start, int end, PieceColor color) {
+            for (int row = start; row < end; ++row) {
+                for (int col = 0; col < size; ++col) {
+                    if ((row + col) % 2 != 0) {
+                        grid[row][col] = std::make_unique<piece::Piece>(color);
+                    }
                 }
             }
-        }
-        for (int row = size - 3; row < size; ++row) {
-            for (int col = 0; col < size; ++col) {
-                if ((row + col) % 2 != 0) {
-                    grid[row][col] = std::make_unique<piece::Piece>(PieceColor::White);
-                }
-            }
-        }
+        };
+
+        placePieces(0, 3, PieceColor::Black);
+        placePieces(size - 3, size, PieceColor::White);
     }
 
     void GameBoard::animatePieceMove(const position::Position& from, const position::Position& to, sf::RenderWindow& window) {
-        float duration = 0.5f;
+        const float duration = 0.5f;
         sf::Clock clock;
 
-        float tileSize = 800.0f / GameBoard::size;
+        const float tileSize = 800.0f / GameBoard::size;
 
         sf::Vector2f startPos(from.col * tileSize, from.row * tileSize);
         sf::Vector2f endPos(to.col * tileSize, to.row * tileSize);

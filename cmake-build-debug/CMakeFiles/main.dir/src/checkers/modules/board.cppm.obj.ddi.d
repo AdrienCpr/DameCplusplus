@@ -818,4 +818,20 @@ CMakeFiles\main.dir\src\checkers\modules\board.cppm.obj.ddi: \
   C:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/include/c++/v1/__memory/assume_aligned.h \
   C:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/include/c++/v1/__memory/ranges_uninitialized_algorithms.h \
   C:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/include/c++/v1/__memory/raw_storage_iterator.h \
-  C:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/include/c++/v1/__memory/uses_allocator_construction.h
+  C:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/include/c++/v1/__memory/uses_allocator_construction.h \
+  C:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/include/c++/v1/numeric \
+  C:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/include/c++/v1/__numeric/accumulate.h \
+  C:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/include/c++/v1/__numeric/adjacent_difference.h \
+  C:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/include/c++/v1/__numeric/exclusive_scan.h \
+  C:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/include/c++/v1/__numeric/gcd_lcm.h \
+  C:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/include/c++/v1/__numeric/inclusive_scan.h \
+  C:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/include/c++/v1/__numeric/inner_product.h \
+  C:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/include/c++/v1/__numeric/iota.h \
+  C:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/include/c++/v1/__numeric/midpoint.h \
+  C:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/include/c++/v1/__numeric/partial_sum.h \
+  C:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/include/c++/v1/__numeric/pstl_reduce.h \
+  C:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/include/c++/v1/__numeric/reduce.h \
+  C:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/include/c++/v1/__numeric/saturation_arithmetic.h \
+  C:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/include/c++/v1/__utility/cmp.h \
+  C:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/include/c++/v1/__numeric/transform_exclusive_scan.h \
+  C:/Compilateurs/llvm-mingw-20240619-msvcrt-x86_64/include/c++/v1/__numeric/transform_inclusive_scan.h

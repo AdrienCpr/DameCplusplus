@@ -1,0 +1,14 @@
+{
+  "revision": 0,
+  "rules": [
+    {
+      "primary-output": "CMakeFiles\\main.dir\\src\\checkers\\windowManager.cpp.obj",
+      "requires": [
+        {
+          "logical-name": "windowManager"
+        }
+      ]
+    }
+  ],
+  "version": 1
+}

@@ -9,6 +9,8 @@ build CMakeFiles/main.dir/src/checkers/position.cpp.obj: dyndep | CMakeFiles/mai
 
 build CMakeFiles/main.dir/src/checkers/soundManager.cpp.obj: dyndep | CMakeFiles/main.dir/soundManager.pcm
 
+build CMakeFiles/main.dir/src/checkers/windowManager.cpp.obj: dyndep | CMakeFiles/main.dir/windowManager.pcm
+
 build CMakeFiles/main.dir/src/checkers/game.cpp.obj: dyndep | CMakeFiles/main.dir/game.pcm
 
 build CMakeFiles/main.dir/src/checkers/modules/board.cppm.obj | CMakeFiles/main.dir/board.pcm: dyndep | CMakeFiles/main.dir/piece.pcm CMakeFiles/main.dir/position.pcm CMakeFiles/main.dir/soundManager.pcm CMakeFiles/main.dir/windowManager.pcm
